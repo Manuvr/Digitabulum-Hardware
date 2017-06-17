@@ -1,8 +1,8 @@
 # Digitabulum-PowerPlant
 
-This is the power-management block of Manuvr's motion-capture glove. It has been broken out as a module for testing and re-use. 
+This is the power-management block of Manuvr's motion-capture glove. It has been broken out as a module for testing and re-use.
 
-## Intended usage 
+## Intended usage
 A software-mediated single-cell li-ion battery manager for cases needing bursts of a few watts and supporting long periods of quiescent standby.
 
 ## Features
@@ -16,7 +16,7 @@ A software-mediated single-cell li-ion battery manager for cases needing bursts 
 ## Primary components
 
 Feature | Manufacturer | Part
-|:----|-----:|
+:----|-----:|:----
 Battery charger | TI | BQ24155
 Fuel gauge | Linear | LTC2942-1
 Regulator | SEMTECH | SC283
@@ -31,7 +31,9 @@ Charge and discharge rate on the battery must not exceed 1A, or the internal sen
 
 ------------------------
 
-![Front](osh-render-front.png)
-![Back](osh-render-back.png)
+Front | Rear
+:-------:|:------:
+![Front](osh-render-front.png)  | ![Back](osh-render-back.png)
+
 
 [<img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park">](https://oshpark.com/shared_projects/sjkcPHEl)
