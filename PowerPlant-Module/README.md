@@ -6,10 +6,12 @@ This is the power-management block of Manuvr's motion-capture glove. It has been
 A software-mediated single-cell li-ion battery manager for cases needing bursts of a few watts and supporting long periods of quiescent standby.
 
 ## Features
-* Fused battery
-* Charger and fuel gauge are both i2c
+* Dual output
 * Secondary regulator has three voltages (0, 2.5, 3.3), and can be changed dynamically.
+* Fused battery (resetable)
+* Charger and fuel gauge are both i2c
 * Integrated 4-bit level-shifter (i2c capable)
+* Accepts up to 20v input
 * 2.54 headers
 * Single-sided assembly for easy thermal-relief
 
@@ -31,7 +33,7 @@ Charge and discharge rate on the battery must not exceed 1A, or the internal sen
 
 ------------------------
 
-Front | Rear
+Front | Back
 :-------:|:------:
 ![Front](osh-render-front.png)  | ![Back](osh-render-back.png)
 
