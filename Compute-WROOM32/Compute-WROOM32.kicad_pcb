@@ -64,7 +64,7 @@
     (pad_drill 2.2)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFB77F)
+    (visible_elements FFFFF77F)
     (pcbplotparams
       (layerselection 0x010f0_80000007)
       (usegerberextensions true)
