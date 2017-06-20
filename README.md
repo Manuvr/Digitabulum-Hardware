@@ -1,4 +1,12 @@
 # Digitabulum-Hardware
+
+
+    .__       ,    .     .
+    |  \* _ *-+- _.|_ . .|. .._ _
+    |__/|(_]| | (_][_)(_||(_|[ | )
+         ._|                      
+
+
 KiCAD source files for Manuvr's motion capture glove.
 
 ------------------------
