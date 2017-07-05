@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IansParts
-LIBS:PowerPlant-Module-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 7874 7874
@@ -57,39 +56,6 @@ F 3 "" H 4850 4250 50  0000 C CNN
 $EndComp
 Text Label 5350 4200 0    39   ~ 0
 GND
-$Comp
-L F_Small F1
-U 1 1 58FBC884
-P 5200 4300
-F 0 "F1" H 5200 4200 50  0000 L CNN
-F 1 "1A" H 5080 4240 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5100 4150 50  0001 C CNN
-F 3 "" H 5200 4300 50  0000 C CNN
-	1    5200 4300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L INDUCTOR L2
-U 1 1 58FD8CD5
-P 3950 1700
-F 0 "L2" V 3900 1700 50  0000 C CNN
-F 1 "2.2uH" V 4050 1700 50  0000 C CNN
-F 2 "iansModules:L-SMD" H 3950 1700 50  0001 C CNN
-F 3 "" H 3950 1700 50  0000 C CNN
-	1    3950 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L INDUCTOR L1
-U 1 1 58FD8FE9
-P 1850 1700
-F 0 "L1" V 1800 1700 50  0000 C CNN
-F 1 "2.2uH" V 1950 1700 50  0000 C CNN
-F 2 "iansModules:L-SMD" H 1850 1700 50  0001 C CNN
-F 3 "" H 1850 1700 50  0000 C CNN
-	1    1850 1700
-	0    -1   -1   0   
-$EndComp
 $Comp
 L C C4
 U 1 1 58FD95EB
@@ -220,20 +186,6 @@ F 3 "" H 3850 4000 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L INDUCTOR L3
-U 1 1 58FE52E2
-P 3850 3400
-F 0 "L3" V 3800 3400 50  0000 C CNN
-F 1 "1uH" V 3950 3400 50  0000 C CNN
-F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE29_SMD1008" H 3850 3400 50  0001 C CNN
-F 3 "" H 3850 3400 50  0000 C CNN
-F 4 "LQM2HPN1R0MJ0L" V 3850 3400 60  0001 C CNN "Manu_Number"
-F 5 "Murata Electronics North America" V 3850 3400 60  0001 C CNN "Manu_Name"
-F 6 "490-6699-1-ND" V 3850 3400 60  0001 C CNN "Digikey_Number"
-	1    3850 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L C C8
 U 1 1 58FE5D97
 P 3450 3550
@@ -247,12 +199,12 @@ $EndComp
 $Comp
 L C C12
 U 1 1 58FE6B58
-P 4200 4250
-F 0 "C12" H 4225 4350 50  0000 L CNN
-F 1 "0.1uF" H 4225 4150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 4238 4100 50  0001 C CNN
-F 3 "" H 4200 4250 50  0000 C CNN
-	1    4200 4250
+P 4050 4300
+F 0 "C12" H 4075 4400 50  0000 L CNN
+F 1 "0.1uF" H 4075 4200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 4088 4150 50  0001 C CNN
+F 3 "" H 4050 4300 50  0000 C CNN
+	1    4050 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -343,17 +295,6 @@ Text Label 6850 2600 0    39   ~ 0
 I2C_SCL
 Text Label 6000 3900 0    39   ~ 0
 VCCUSB
-$Comp
-L GND #PWR03
-U 1 1 590E9ED9
-P 4200 4500
-F 0 "#PWR03" H 4200 4250 50  0001 C CNN
-F 1 "GND" H 4200 4350 50  0000 C CNN
-F 2 "" H 4200 4500 50  0000 C CNN
-F 3 "" H 4200 4500 50  0000 C CNN
-	1    4200 4500
-	1    0    0    -1  
-$EndComp
 Text Label 3800 1250 0    39   ~ 0
 ~SHUTDOWN
 Text Label 2600 5600 0    39   ~ 0
@@ -449,7 +390,7 @@ Wire Wire Line
 Connection ~ 2450 1450
 Connection ~ 2450 1250
 Wire Wire Line
-	1500 1700 1500 1850
+	1800 1700 1800 1850
 Wire Wire Line
 	2400 4500 2400 4450
 Wire Wire Line
@@ -484,7 +425,7 @@ Wire Wire Line
 	3300 3400 3550 3400
 Connection ~ 3450 3400
 Wire Wire Line
-	4000 4000 4200 4000
+	4000 4000 4050 4000
 Connection ~ 4050 4000
 Connection ~ 3650 4000
 Wire Wire Line
@@ -511,10 +452,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 1300 1000 1300
 Wire Wire Line
-	4150 3400 4200 3400
-Wire Wire Line
-	4200 3400 4200 4100
-Wire Wire Line
 	2150 1400 2200 1400
 Wire Wire Line
 	1050 1100 1000 1100
@@ -532,13 +469,10 @@ Wire Wire Line
 	6150 2400 6200 2400
 Wire Wire Line
 	6150 2300 6200 2300
-Connection ~ 4200 4000
 Wire Wire Line
-	4050 3850 4050 4000
+	4050 3400 4050 4150
 Wire Wire Line
-	4200 4500 4200 4400
-Wire Wire Line
-	1250 4500 3650 4500
+	1250 4500 4050 4500
 Wire Wire Line
 	3600 1350 3650 1350
 Wire Wire Line
@@ -607,12 +541,12 @@ Wire Wire Line
 	3400 4450 3400 4500
 Connection ~ 3400 4500
 Wire Wire Line
-	1550 1700 1500 1700
+	1850 1700 1800 1700
 Connection ~ 2450 1550
 Wire Wire Line
 	2450 2050 2500 2050
 Wire Wire Line
-	4250 1700 4300 1700
+	3950 1700 4300 1700
 Wire Wire Line
 	4300 2600 4300 2450
 Wire Wire Line
@@ -629,7 +563,7 @@ Wire Wire Line
 	2200 1850 2200 2100
 Connection ~ 2200 1850
 Wire Wire Line
-	1500 1850 2500 1850
+	1800 1850 2500 1850
 Wire Wire Line
 	2550 6750 2550 6900
 Wire Wire Line
@@ -1003,4 +937,54 @@ Wire Notes Line
 	6900 900  5250 900 
 Wire Notes Line
 	5250 900  5050 1100
+$Comp
+L L_Core_Ferrite L2
+U 1 1 595B50D8
+P 3800 1700
+F 0 "L2" V 3750 1600 50  0000 C CNN
+F 1 "2.2uH" V 3910 1700 50  0000 C CNN
+F 2 "r2Parts:L-SMD" H 3800 1700 50  0001 C CNN
+F 3 "" H 3800 1700 50  0001 C CNN
+	1    3800 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L L_Core_Ferrite L1
+U 1 1 595B5B6F
+P 2000 1700
+F 0 "L1" V 1950 1600 50  0000 C CNN
+F 1 "2.2uH" V 2110 1700 50  0000 C CNN
+F 2 "r2Parts:L-SMD" H 2000 1700 50  0001 C CNN
+F 3 "" H 2000 1700 50  0001 C CNN
+	1    2000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L L_Core_Ferrite L3
+U 1 1 595B62B9
+P 3700 3400
+F 0 "L3" V 3650 3300 50  0000 C CNN
+F 1 "1uH" V 3810 3400 50  0000 C CNN
+F 2 "r2Parts:L-SMD" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 4500 4050 4450
+Connection ~ 3650 4500
+Wire Wire Line
+	4050 3400 3850 3400
+Connection ~ 4050 3850
+$Comp
+L Polyfuse_Small F1
+U 1 1 595B6F4F
+P 5200 4300
+F 0 "F1" V 5125 4300 50  0000 C CNN
+F 1 "1A" V 5275 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5250 4100 50  0001 L CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
