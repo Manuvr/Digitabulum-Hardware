@@ -1,0 +1,150 @@
+
+(rules PCB r2-PMIC
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2098)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 4.5)
+    )
+    (layer_rule Inner1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+    (layer_rule Inner2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.7)
+    )
+    (layer_rule B.Cu
+      (active off)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+  )
+  (rule
+    (width 160.0)
+    (clear 160.2)
+    (clear 80.0 (type smd_to_turn_gap))
+    (clear 40.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_510:330_um"
+    (shape
+      (circle F.Cu 510.0 0.0 0.0)
+    )
+    (shape
+      (circle Inner1.Cu 510.0 0.0 0.0)
+    )
+    (shape
+      (circle Inner2.Cu 510.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 510.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_510:330_um" "Via[0-3]_510:330_um" default
+  )
+  (via 
+    "Via[0-3]_510:330_um-kicad_default" "Via[0-3]_510:330_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_510:330_um-GND" "Via[0-3]_510:330_um" GND
+  )
+  (via 
+    "Via[0-3]_510:330_um-High-Current" "Via[0-3]_510:330_um" "High-Current"
+  )
+  (via 
+    "Via[0-3]_510:330_um-VCC" "Via[0-3]_510:330_um" VCC
+  )
+  (via_rule
+    default "Via[0-3]_510:330_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_510:330_um-kicad_default"
+  )
+  (via_rule
+    GND "Via[0-3]_510:330_um-GND"
+  )
+  (via_rule
+    "High-Current" "Via[0-3]_510:330_um-High-Current"
+  )
+  (via_rule
+    VCC "Via[0-3]_510:330_um-VCC"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu Inner1.Cu Inner2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND /VCCUSB /VCC1 /VCC0 "/CPLD_EXT_CLK" "/CPLD_OE" "/IRQ_WAKEUP" "/SPI1_CLK"
+    "/SPI1_MISO" "/SPI1_MOSI" "/SPI2_CLK" "/SPI2_CS" "/SPI2_MOSI" "/~CPLD_RESET" "/~LED_INT" "/~LED_RESET"
+    /~REQ "/I2C_SDA" "/I2C_SCL" "Net-(C2-Pad1)" "Net-(L1-Pad2)" /~SHUTDOWN "Net-(F1-Pad2)" "Net-(C8-Pad1)"
+    /Vlipo /ALERT /ISEL "/I2C_SDA_LV" "/I2C_SCL_LV" "/SPI1_CS_0" "Net-(CON1-Pad4)" "Net-(CON1-Pad3)"
+    "Net-(CON1-Pad2)" "/USB_D+" "/USB_D-" "Net-(D1-Pad2)" "Net-(D1-Pad1)" "Net-(C3-Pad1)" "Net-(C8-Pad2)" "Net-(C12-Pad1)"
+    "Net-(L2-Pad1)" "/CPLD_GPIO_0" /TMS /TCK /TDO /TDI "Net-(QA_NPN1-Pad4)" "/CHIP_PU"
+    "/PIN_0" "Net-(P4-Pad19)" "Net-(P4-Pad24)" "Net-(P4-Pad22)" "Net-(P4-Pad27)" "Net-(P4-Pad17)" "Net-(P4-Pad18)" "Net-(P4-Pad20)"
+    "Net-(P4-Pad21)" "Net-(P4-Pad23)" "Net-(P4-Pad25)" "Net-(P4-Pad26)" "Net-(P4-Pad28)" "Net-(P4-Pad29)" "Net-(P4-Pad16)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu Inner1.Cu Inner2.Cu B.Cu)
+    )
+  )
+  (class GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu Inner1.Cu Inner2.Cu B.Cu)
+    )
+  )
+  (class "High-Current"
+    /Vbatt
+    (clearance_class "High-Current")
+    (via_rule High-Current)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu Inner1.Cu Inner2.Cu B.Cu)
+    )
+  )
+  (class VCC
+    (clearance_class VCC)
+    (via_rule VCC)
+    (rule
+      (width 160.0)
+    )
+    (circuit 
+      (use_layer F.Cu Inner1.Cu Inner2.Cu B.Cu)
+    )
+  )
+)

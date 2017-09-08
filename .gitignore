@@ -18,7 +18,6 @@ _autosave-*
 
 # Exported BOM files
 *.xml
-*.csv
 
 # File manager artifacts
 .directory
