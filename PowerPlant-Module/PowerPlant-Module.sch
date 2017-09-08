@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:IansParts
+LIBS:PowerPlant-Module-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 7874 7874
@@ -245,6 +246,9 @@ F 0 "U5" H 1500 1200 60  0000 C CNN
 F 1 "LTC2942-1" H 1550 1500 60  0000 C CNN
 F 2 "r2Parts:DFN-6-1EP_2x3mm_Pitch0.5mm" H 1750 1050 60  0001 C CNN
 F 3 "" H 1750 1050 60  0000 C CNN
+F 4 "LTC2942CDCB-1#TRMPBF" H 1750 1250 60  0001 C CNN "Manu_Number"
+F 5 "Linear Technology" H 1750 1250 60  0001 C CNN "Manu_Name"
+F 6 "LTC2942CDCB-1#TRMPBFCT-ND" H 1750 1250 60  0001 C CNN "Digikey_Number"
 	1    1750 1250
 	1    0    0    -1  
 $EndComp
