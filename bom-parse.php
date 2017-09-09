@@ -13,6 +13,7 @@
 * 0.0.1:      Created file, and added the boilerplate.
 * 0.1.3:      Began tracking version information in the source file itself. Added multi-BOM support.
 * 0.1.4:      Follow 301 redirects. Changed field names to something meaningful. Fixed delimiters.
+* 0.1.5:      Ugly hack to intercetp a formed URL for a specific part, whose BOM values won't systematize nicely.
 *
 *
 */
@@ -205,7 +206,12 @@ function parse_price_for_part($manu_part, $dk_part) {
   if ((strlen($manu_part) == 0) || (strlen($dk_part) == 0)) {
     return false;
   }
-  $url = DK_BASE_URL.urlencode($manu_part).'/'.urlencode($dk_part);
+  if ($dk_part == 'LTC2942CDCB-1#TRMPBFCT-ND') {
+    $url = 'https://www.digikey.com/product-detail/en/LTC2942CDCB-1-TRMPBF/LTC2942CDCB-1-TRMPBFCT-ND/2355253';
+  }
+  else {
+    $url = DK_BASE_URL.urlencode($manu_part).'/'.urlencode($dk_part);
+  }
   $t_res = cURL($url);
   if ($t_res) {
     if (($t_res['http_code'] < 300) && ($t_res['http_code'] >= 200)) {
