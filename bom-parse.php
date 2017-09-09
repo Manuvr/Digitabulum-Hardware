@@ -45,11 +45,11 @@ define('DK_BASE_URL',   'http://www.digikey.com/product-detail/en/');
 define('CACHE_FILE',    '.bom_parse_cache');
 define('LOG_FILE',      '.bom_parse_log');
 
-define('CONSOLE_WIDTH',        128);
+define('CONSOLE_WIDTH',        64);
 
 
 define('COMPONENT_NAME',     'BOM_PARSER');
-define('COMPONENT_VERSION',  '0.1.3');
+define('COMPONENT_VERSION',  '0.1.5');
 
 
 $maximum_src_str_len = 4;
