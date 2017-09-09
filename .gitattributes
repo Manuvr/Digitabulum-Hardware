@@ -1,1 +1,2 @@
-*.rb linguist-language=KiCAD
+* linguist-vendored
+*.kicad_pcb linguist-vendored=false
