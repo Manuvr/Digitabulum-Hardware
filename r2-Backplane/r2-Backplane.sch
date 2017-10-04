@@ -453,7 +453,6 @@ F 6 "497-13521-1-ND" H 5500 6000 60  0001 C CNN "Digikey_Number"
 	1    5500 6000
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 6300 5650
 NoConn ~ 6300 5750
 NoConn ~ 6300 5950
 NoConn ~ 6300 5850
@@ -465,10 +464,6 @@ Text Label 5950 6350 0    39   ~ 0
 USB_D-
 Text Label 5950 6450 0    39   ~ 0
 USB_D+
-NoConn ~ 5500 6650
-NoConn ~ 5500 6550
-NoConn ~ 5900 6550
-NoConn ~ 5900 6650
 Text Label 4100 1100 0    39   ~ 0
 ~SHUTDOWN
 Text Label 9750 2150 2    39   ~ 0
@@ -1440,20 +1435,6 @@ Wire Wire Line
 	6900 4150 6900 4100
 Connection ~ 6500 4150
 $Comp
-L R_Pack04 RP1
-U 1 1 59B357DE
-P 5700 6550
-F 0 "RP1" V 5400 6550 50  0000 C CNN
-F 1 "22" V 5900 6550 50  0000 C CNN
-F 2 "r2Parts:RES_4_EXBN8V" V 5975 6550 50  0001 C CNN
-F 3 "" H 5700 6550 50  0001 C CNN
-F 4 "EXB-N8V220JX" V 5700 6550 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" V 5700 6550 60  0001 C CNN "Manu_Name"
-F 6 "Y10220CT-ND" V 5700 6550 60  0001 C CNN "Digikey_Number"
-	1    5700 6550
-	0    1    1    0   
-$EndComp
-$Comp
 L L_Core_Ferrite L2
 U 1 1 59B2E3C2
 P 4250 1550
@@ -1627,4 +1608,40 @@ F 6 "P1.00KLCT-ND" V 4300 3300 60  0001 C CNN "Digikey_Number"
 	1    4300 3300
 	0    1    -1   0   
 $EndComp
+Text Label 6350 5650 0    39   ~ 0
+GND
+Wire Wire Line
+	6300 5650 6350 5650
+$Comp
+L R_Pack04 RP1
+U 1 1 59B357DE
+P 5700 6550
+F 0 "RP1" V 5400 6550 50  0000 C CNN
+F 1 "22" V 5900 6550 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" V 5975 6550 50  0001 C CNN
+F 3 "" H 5700 6550 50  0001 C CNN
+F 4 "EXB-N8V220JX" V 5700 6550 60  0001 C CNN "Manu_Number"
+F 5 "Panasonic Electronic Components" V 5700 6550 60  0001 C CNN "Manu_Name"
+F 6 "Y10220CT-ND" V 5700 6550 60  0001 C CNN "Digikey_Number"
+	1    5700 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 6550 5450 6550
+Wire Wire Line
+	5450 6550 5450 6800
+Wire Wire Line
+	5450 6650 5500 6650
+Wire Wire Line
+	5450 6800 5950 6800
+Wire Wire Line
+	5950 6800 5950 6550
+Wire Wire Line
+	5950 6550 5900 6550
+Connection ~ 5450 6650
+Wire Wire Line
+	5900 6650 5950 6650
+Connection ~ 5950 6650
+Text Label 5800 6800 0    39   ~ 0
+GND
 $EndSCHEMATC

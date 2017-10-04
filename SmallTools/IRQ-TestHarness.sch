@@ -1,0 +1,666 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IansParts
+LIBS:IRQ-TestHarness-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "30 jul 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC165 U3
+U 1 1 55B7E51F
+P 3450 3850
+F 0 "U3" V 3400 4000 60  0000 C CNN
+F 1 "74HC165" V 3250 4050 60  0000 C CNN
+F 2 "DHVQFN16-3.5x2.5" V 3500 4000 39  0000 C CNN
+F 3 "" H 3450 3850 60  0000 C CNN
+F 4 "74HC165BQ,115" V 3450 3850 39  0001 C CNN "Manu_Number"
+F 5 "NXP Semiconductors" V 3450 3850 39  0001 C CNN "Manu_Name"
+F 6 "568-7724-1-ND" V 3450 3850 39  0001 C CNN "Digikey_Number"
+	1    3450 3850
+	1    0    0    -1  
+$EndComp
+Text Label 1200 4400 2    39   ~ 0
+GND
+Text Label 3900 3700 0    39   ~ 0
+INT_0_0
+Text Label 3900 3800 0    39   ~ 0
+INT_1_0
+Text Label 3900 3900 0    39   ~ 0
+INT_2_0
+Text Label 3900 4000 0    39   ~ 0
+INT_3_0
+Text Label 2450 3700 0    39   ~ 0
+INT_0_1
+Text Label 2450 3800 0    39   ~ 0
+INT_1_1
+Text Label 2450 3900 0    39   ~ 0
+INT_2_1
+Text Label 2450 4000 0    39   ~ 0
+INT_3_1
+Text Label 2450 3600 0    39   ~ 0
+INT_0_2
+Text Label 2450 3500 0    39   ~ 0
+INT_1_2
+Text Label 2450 3400 0    39   ~ 0
+INT_2_2
+Text Label 2450 3300 0    39   ~ 0
+INT_3_2
+Text Label 1000 3400 2    39   ~ 0
+IRQ_CLK
+Text Label 2700 4250 2    39   ~ 0
+IRQ_DAT
+Text Label 1000 3300 2    39   ~ 0
+IRQ_LOAD
+Text Label 3350 2850 0    39   ~ 0
+VCC
+NoConn ~ 1350 3750
+NoConn ~ 2800 3750
+$Comp
+L 74HC165 U2
+U 1 1 55B7E52C
+P 2000 3850
+F 0 "U2" V 1950 4000 60  0000 C CNN
+F 1 "74HC165" V 1800 4050 60  0000 C CNN
+F 2 "DHVQFN16-3.5x2.5" V 2050 4000 39  0000 C CNN
+F 3 "" H 2000 3850 60  0000 C CNN
+F 4 "74HC165BQ,115" V 2000 3850 39  0001 C CNN "Manu_Number"
+F 5 "NXP Semiconductors" V 2000 3850 39  0001 C CNN "Manu_Name"
+F 6 "568-7724-1-ND" V 2000 3850 39  0001 C CNN "Digikey_Number"
+	1    2000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3300 1350 3300
+Wire Wire Line
+	1200 3300 1200 2900
+Wire Wire Line
+	1200 2900 2700 2900
+Wire Wire Line
+	2700 2900 2700 3300
+Wire Wire Line
+	2700 3300 2800 3300
+Wire Wire Line
+	1800 4400 1800 4300
+Wire Wire Line
+	1900 4400 1900 4300
+Connection ~ 1900 4400
+Wire Wire Line
+	3250 4400 3250 4300
+Connection ~ 3250 4400
+Wire Wire Line
+	1850 2950 1850 2850
+Wire Wire Line
+	1850 2850 3350 2850
+Wire Wire Line
+	3300 2850 3300 2950
+Connection ~ 1800 4400
+Wire Wire Line
+	2800 3400 2800 2800
+Wire Wire Line
+	2800 2800 1150 2800
+Wire Wire Line
+	1150 2800 1150 3400
+Wire Wire Line
+	1000 3400 1350 3400
+Wire Wire Line
+	1350 3500 1300 3500
+Wire Wire Line
+	1300 3500 1300 4400
+Connection ~ 1300 4400
+Wire Wire Line
+	2800 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 4400
+Connection ~ 2750 4400
+Wire Wire Line
+	2800 3650 2700 3650
+Wire Wire Line
+	2700 3650 2700 4250
+Wire Wire Line
+	1350 4400 1350 3950
+Connection ~ 1200 3300
+Connection ~ 1150 3400
+Wire Wire Line
+	1100 3650 1350 3650
+Wire Wire Line
+	3850 3700 3900 3700
+Wire Wire Line
+	3850 3800 3900 3800
+Wire Wire Line
+	3850 3900 3900 3900
+Wire Wire Line
+	3850 4000 3900 4000
+Wire Wire Line
+	2400 3300 2450 3300
+Wire Wire Line
+	2400 3400 2450 3400
+Wire Wire Line
+	2400 3500 2450 3500
+Wire Wire Line
+	2400 3600 2450 3600
+Wire Wire Line
+	2400 3700 2450 3700
+Wire Wire Line
+	2400 3800 2450 3800
+Wire Wire Line
+	2400 3900 2450 3900
+Wire Wire Line
+	2400 4000 2450 4000
+Connection ~ 3300 2850
+Connection ~ 1350 4400
+Wire Wire Line
+	1100 3650 1100 4350
+Wire Wire Line
+	1100 4350 2800 4350
+Wire Wire Line
+	2800 4350 2800 3950
+Text Label 2700 2150 2    39   ~ 0
+IRQ_DAT
+Text Label 2700 2250 2    39   ~ 0
+IRQ_LOAD
+Text Label 2700 2350 2    39   ~ 0
+IRQ_CLK
+Text Label 2700 2050 2    39   ~ 0
+VCC
+Text Label 2700 2450 2    39   ~ 0
+GND
+Wire Wire Line
+	1200 4400 3350 4400
+Wire Wire Line
+	3350 4400 3350 4300
+$Comp
+L R_PACK4 RP4
+U 1 1 59150BF6
+P 3850 2950
+F 0 "RP4" H 3850 3400 50  0000 C CNN
+F 1 "R_PACK4" H 3850 2900 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_DIP_x4_W5.08mm_Slide_Copal_CHS-A" V 3500 3650 50  0000 C CNN
+F 3 "" H 3850 2950 50  0000 C CNN
+	1    3850 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3300 4250 3300
+Wire Wire Line
+	3850 3400 4250 3400
+Wire Wire Line
+	3850 3500 4250 3500
+Wire Wire Line
+	3850 3600 4250 3600
+Wire Wire Line
+	3900 3150 3900 3300
+Connection ~ 3900 3300
+Wire Wire Line
+	4000 3150 4000 3400
+Connection ~ 4000 3400
+Wire Wire Line
+	4100 3150 4100 3500
+Connection ~ 4100 3500
+Wire Wire Line
+	4200 3150 4200 3600
+Connection ~ 4200 3600
+Wire Wire Line
+	3900 2750 3900 2700
+Wire Wire Line
+	3850 2700 4200 2700
+Wire Wire Line
+	4200 2700 4200 2750
+Wire Wire Line
+	4100 2750 4100 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	4000 2750 4000 2700
+Connection ~ 4000 2700
+Text Label 3850 2700 2    39   ~ 0
+VCC
+Connection ~ 3900 2700
+Text Label 4800 3300 0    39   ~ 0
+GND
+Wire Wire Line
+	4800 3300 4650 3300
+Wire Wire Line
+	4650 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3300
+Connection ~ 4700 3300
+Wire Wire Line
+	4650 3400 4700 3400
+Connection ~ 4700 3400
+Wire Wire Line
+	4650 3500 4700 3500
+Connection ~ 4700 3500
+Text Label 2400 5950 0    39   ~ 0
+INT_0_0
+Text Label 2400 6050 0    39   ~ 0
+INT_1_0
+Text Label 2400 6150 0    39   ~ 0
+INT_2_0
+Text Label 2400 6250 0    39   ~ 0
+INT_3_0
+Text Label 2400 5450 0    39   ~ 0
+INT_0_1
+Text Label 2400 5550 0    39   ~ 0
+INT_1_1
+Text Label 2400 5650 0    39   ~ 0
+INT_2_1
+Text Label 2400 5750 0    39   ~ 0
+INT_3_1
+Text Label 2400 5250 0    39   ~ 0
+INT_0_2
+Text Label 2400 5150 0    39   ~ 0
+INT_1_2
+Text Label 2400 5050 0    39   ~ 0
+INT_2_2
+Text Label 2400 4950 0    39   ~ 0
+INT_3_2
+$Comp
+L R_PACK4 RP1
+U 1 1 5915127D
+P 2100 5300
+F 0 "RP1" H 2100 5750 50  0000 C CNN
+F 1 "R_PACK4" H 2100 5250 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" H 2100 5300 50  0001 C CNN
+F 3 "" H 2100 5300 50  0000 C CNN
+	1    2100 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4950 2650 4950
+Wire Wire Line
+	2300 5050 2650 5050
+Wire Wire Line
+	2300 5150 2650 5150
+Wire Wire Line
+	2300 5250 2650 5250
+Wire Wire Line
+	2300 5450 2650 5450
+Wire Wire Line
+	2300 5550 2650 5550
+Wire Wire Line
+	2300 5650 2650 5650
+Wire Wire Line
+	2300 5750 2650 5750
+Wire Wire Line
+	2300 5950 2650 5950
+Wire Wire Line
+	2300 6050 2650 6050
+Wire Wire Line
+	2300 6150 2650 6150
+Wire Wire Line
+	2300 6250 2650 6250
+Wire Wire Line
+	1900 6250 1850 6250
+Wire Wire Line
+	1850 6250 1850 4950
+Wire Wire Line
+	1800 4950 1900 4950
+Wire Wire Line
+	1850 5050 1900 5050
+Connection ~ 1850 5050
+Wire Wire Line
+	1900 5150 1850 5150
+Connection ~ 1850 5150
+Wire Wire Line
+	1850 5250 1900 5250
+Connection ~ 1850 5250
+Wire Wire Line
+	1900 5450 1850 5450
+Connection ~ 1850 5450
+Wire Wire Line
+	1850 5550 1900 5550
+Connection ~ 1850 5550
+Wire Wire Line
+	1900 5650 1850 5650
+Connection ~ 1850 5650
+Wire Wire Line
+	1850 5750 1900 5750
+Connection ~ 1850 5750
+Wire Wire Line
+	1900 5950 1850 5950
+Connection ~ 1850 5950
+Wire Wire Line
+	1850 6050 1900 6050
+Connection ~ 1850 6050
+Wire Wire Line
+	1900 6150 1850 6150
+Connection ~ 1850 6150
+Text Label 3050 4950 0    39   ~ 0
+VCC
+Connection ~ 1850 4950
+$Comp
+L SW_PUSH_SMALL_H SW1
+U 1 1 59151C62
+P 2800 4950
+F 0 "SW1" H 2800 4950 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 4890 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5150 50  0001 C CNN
+F 3 "" H 2800 5150 50  0000 C CNN
+	1    2800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4950 3050 4950
+Wire Wire Line
+	3000 4950 3000 6250
+Wire Wire Line
+	3000 5250 2950 5250
+Wire Wire Line
+	2950 5150 3000 5150
+Connection ~ 3000 5150
+Wire Wire Line
+	2950 5050 3000 5050
+Connection ~ 3000 5050
+Text Label 1800 4950 2    39   ~ 0
+GND
+Wire Wire Line
+	3000 5450 2950 5450
+Wire Wire Line
+	3000 5750 2950 5750
+Wire Wire Line
+	2950 5650 3000 5650
+Connection ~ 3000 5650
+Wire Wire Line
+	2950 5550 3000 5550
+Connection ~ 3000 5550
+Wire Wire Line
+	3000 5950 2950 5950
+Wire Wire Line
+	3000 6250 2950 6250
+Wire Wire Line
+	2950 6150 3000 6150
+Connection ~ 3000 6150
+Wire Wire Line
+	2950 6050 3000 6050
+Connection ~ 3000 6050
+Connection ~ 3000 4950
+Connection ~ 3000 5450
+Connection ~ 3000 5250
+Connection ~ 3000 5950
+Connection ~ 3000 5750
+$Comp
+L CONN_01X05 P2
+U 1 1 59152DC9
+P 2950 2250
+F 0 "P2" H 2950 2550 50  0000 C CNN
+F 1 "CONN_01X05" V 3050 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 2950 2250 50  0000 C CNN
+F 3 "" H 2950 2250 50  0000 C CNN
+	1    2950 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2050 2750 2050
+Wire Wire Line
+	2700 2150 2750 2150
+Wire Wire Line
+	2700 2250 2750 2250
+Wire Wire Line
+	2700 2350 2750 2350
+Wire Wire Line
+	2700 2450 2750 2450
+Text Label 2700 1500 2    39   ~ 0
+IRQ_DAT
+Text Label 2700 1600 2    39   ~ 0
+IRQ_LOAD
+Text Label 2700 1700 2    39   ~ 0
+IRQ_CLK
+Text Label 2700 1400 2    39   ~ 0
+VCC
+Text Label 2700 1800 2    39   ~ 0
+GND
+$Comp
+L CONN_01X05 P1
+U 1 1 5915304F
+P 2950 1600
+F 0 "P1" H 2950 1900 50  0000 C CNN
+F 1 "CONN_01X05" V 3050 1600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 2950 1600 50  0000 C CNN
+F 3 "" H 2950 1600 50  0000 C CNN
+	1    2950 1600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 1400 2750 1400
+Wire Wire Line
+	2700 1500 2750 1500
+Wire Wire Line
+	2700 1600 2750 1600
+Wire Wire Line
+	2700 1700 2750 1700
+Wire Wire Line
+	2700 1800 2750 1800
+$Comp
+L R_PACK4 RP2
+U 1 1 59153989
+P 2100 5800
+F 0 "RP2" H 2100 6250 50  0000 C CNN
+F 1 "R_PACK4" H 2100 5750 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" H 2100 5800 50  0001 C CNN
+F 3 "" H 2100 5800 50  0000 C CNN
+	1    2100 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R_PACK4 RP3
+U 1 1 591539ED
+P 2100 6300
+F 0 "RP3" H 2100 6750 50  0000 C CNN
+F 1 "R_PACK4" H 2100 6250 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" H 2100 6300 50  0001 C CNN
+F 3 "" H 2100 6300 50  0000 C CNN
+	1    2100 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R_PACK4 RP5
+U 1 1 59153AE6
+P 4450 3650
+F 0 "RP5" H 4450 4100 50  0000 C CNN
+F 1 "R_PACK4" H 4450 3600 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" H 4450 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0000 C CNN
+	1    4450 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW2
+U 1 1 5915411C
+P 2800 5050
+F 0 "SW2" H 2800 5050 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 4990 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5250 50  0001 C CNN
+F 3 "" H 2800 5250 50  0000 C CNN
+	1    2800 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW3
+U 1 1 59154155
+P 2800 5150
+F 0 "SW3" H 2800 5150 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5090 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5350 50  0001 C CNN
+F 3 "" H 2800 5350 50  0000 C CNN
+	1    2800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW4
+U 1 1 5915418D
+P 2800 5250
+F 0 "SW4" H 2800 5250 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5190 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5450 50  0001 C CNN
+F 3 "" H 2800 5450 50  0000 C CNN
+	1    2800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW5
+U 1 1 591541C4
+P 2800 5450
+F 0 "SW5" H 2800 5450 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5390 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5650 50  0001 C CNN
+F 3 "" H 2800 5650 50  0000 C CNN
+	1    2800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW6
+U 1 1 59154202
+P 2800 5550
+F 0 "SW6" H 2800 5550 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5490 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5750 50  0001 C CNN
+F 3 "" H 2800 5750 50  0000 C CNN
+	1    2800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW8
+U 1 1 59154243
+P 2800 5750
+F 0 "SW8" H 2800 5750 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5690 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5950 50  0001 C CNN
+F 3 "" H 2800 5950 50  0000 C CNN
+	1    2800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW7
+U 1 1 5915428B
+P 2800 5650
+F 0 "SW7" H 2800 5650 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5590 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 5850 50  0001 C CNN
+F 3 "" H 2800 5850 50  0000 C CNN
+	1    2800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW9
+U 1 1 591542CE
+P 2800 5950
+F 0 "SW9" H 2800 5950 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5890 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 6150 50  0001 C CNN
+F 3 "" H 2800 6150 50  0000 C CNN
+	1    2800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW10
+U 1 1 5915432C
+P 2800 6050
+F 0 "SW10" H 2800 6050 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 5990 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 6250 50  0001 C CNN
+F 3 "" H 2800 6250 50  0000 C CNN
+	1    2800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW11
+U 1 1 59154388
+P 2800 6150
+F 0 "SW11" H 2800 6150 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 6090 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 6350 50  0001 C CNN
+F 3 "" H 2800 6350 50  0000 C CNN
+	1    2800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW12
+U 1 1 591543D4
+P 2800 6250
+F 0 "SW12" H 2800 6250 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3160 6190 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15" H 2800 6450 50  0001 C CNN
+F 3 "" H 2800 6450 50  0000 C CNN
+	1    2800 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPARRAY_4 CARY1
+U 1 1 5915579F
+P 4300 5150
+F 0 "CARY1" H 4300 4550 60  0000 C CNN
+F 1 "CAPARRAY_4" H 4300 5700 39  0000 C CNN
+F 2 "r2Parts:CapArray_CKCL44" V 3900 5250 60  0000 C CNN
+F 3 "" H 4300 5150 60  0000 C CNN
+	1    4300 5150
+	0    1    1    0   
+$EndComp
+Text Label 3800 4850 2    39   ~ 0
+VCC
+Text Label 3800 5450 2    39   ~ 0
+GND
+Wire Wire Line
+	3800 5450 4650 5450
+Wire Wire Line
+	4650 5450 4650 5400
+Wire Wire Line
+	4400 5400 4400 5450
+Connection ~ 4400 5450
+Wire Wire Line
+	4150 5400 4150 5450
+Connection ~ 4150 5450
+Wire Wire Line
+	3900 5400 3900 5450
+Connection ~ 3900 5450
+Wire Wire Line
+	3800 4850 4650 4850
+Wire Wire Line
+	4650 4850 4650 4900
+Wire Wire Line
+	4400 4900 4400 4850
+Connection ~ 4400 4850
+Wire Wire Line
+	4150 4900 4150 4850
+Connection ~ 4150 4850
+Wire Wire Line
+	3900 4900 3900 4850
+Connection ~ 3900 4850
+$EndSCHEMATC
