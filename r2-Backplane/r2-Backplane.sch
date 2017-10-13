@@ -347,7 +347,7 @@ F 2 "r2Parts:DF12(3.0)-32DS-0.5V(86)" H 10150 4100 39  0000 C CNN
 F 3 "" H 10150 3900 50  0000 C CNN
 F 4 "DF12-32DS-0.5V(86)" H 10150 4150 39  0001 C CNN "Manu_Number"
 F 5 "Hirose Electric Co Ltd" H 10150 5000 39  0001 C CNN "Manu_Name"
-F 6 "H5205CT-ND" H 10150 5000 39  0001 C CNN "Digikey_Number"
+F 6 "H11708TR-ND" H 10150 5000 39  0001 C CNN "Digikey_Number"
 	1    10150 5000
 	-1   0    0    1   
 $EndComp
