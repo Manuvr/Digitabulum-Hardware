@@ -30,7 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:IansParts
 LIBS:switches
-LIBS:Provisioner-cache
+LIBS:r2-DevKit-cache
 EELAYER 25 0
 EELAYER END
 $Descr User 7905 7496
@@ -48,12 +48,12 @@ $EndDescr
 $Comp
 L CONN_01X01 P3
 U 1 1 584C56F1
-P 1700 6300
-F 0 "P3" H 1700 6400 50  0000 C CNN
-F 1 "CONN_01X01" V 1800 6300 50  0001 C CNN
-F 2 "manuvr_logo:ManuvrLogo" H 1700 6200 50  0000 C CNN
-F 3 "" H 1700 6300 50  0000 C CNN
-	1    1700 6300
+P 5350 2100
+F 0 "P3" H 5350 2200 50  0000 C CNN
+F 1 "CONN_01X01" V 5450 2100 50  0001 C CNN
+F 2 "manuvr_logo:ManuvrLogo" H 5350 2000 50  0000 C CNN
+F 3 "" H 5350 2100 50  0000 C CNN
+	1    5350 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -76,7 +76,7 @@ Text Label 1800 1900 0    39   ~ 0
 VCCUSB
 Text Label 5550 3050 0    39   ~ 0
 VCCUSB
-Text Label 5950 2250 2    39   ~ 0
+Text Label 1150 6450 2    39   ~ 0
 VCC1
 Text Label 4050 3950 0    39   ~ 0
 VCC0
@@ -94,20 +94,6 @@ Text Label 950  1000 2    39   ~ 0
 ALERT
 Text Label 2850 4450 2    39   ~ 0
 ALERT
-$Comp
-L LED_Small D3
-U 1 1 590A96D2
-P 5250 5050
-F 0 "D3" H 5100 5100 39  0000 L CNN
-F 1 "Vcc1" H 5300 5150 39  0000 L CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 5250 5050 50  0001 C CNN
-F 3 "" V 5250 5050 50  0000 C CNN
-F 4 "LNJ347W83RA" H 5250 5050 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" H 5250 5050 60  0001 C CNN "Manu_Name"
-F 6 "LNJ347W83RACT-ND" H 5250 5050 60  0001 C CNN "Digikey_Number"
-	1    5250 5050
-	-1   0    0    1   
-$EndComp
 Text Label 950  1300 2    39   ~ 0
 ISEL
 Text Label 4050 3550 0    39   ~ 0
@@ -116,69 +102,69 @@ Text Label 950  1100 2    39   ~ 0
 ~2V5
 Text Label 950  1200 2    39   ~ 0
 ~SHUTDOWN
-Text Label 6550 1750 0    39   ~ 0
+Text Label 1750 5950 0    39   ~ 0
 I2C_SCL_LV
-Text Label 5950 2050 2    39   ~ 0
+Text Label 1150 6250 2    39   ~ 0
 Vbatt
-Text Label 5950 1250 2    39   ~ 0
+Text Label 1150 5450 2    39   ~ 0
 CPLD_OE
-Text Label 6550 1250 0    39   ~ 0
+Text Label 1750 5450 0    39   ~ 0
 ~CPLD_RESET
-Text Label 6550 2050 0    39   ~ 0
+Text Label 1750 6250 0    39   ~ 0
 Vbatt
-Text Label 5950 1850 2    39   ~ 0
+Text Label 1150 6050 2    39   ~ 0
 I2C_SDA_LV
-Text Label 6550 1450 0    39   ~ 0
+Text Label 1750 5650 0    39   ~ 0
 CPLD_GPIO_0
-Text Label 5950 1650 2    39   ~ 0
+Text Label 1150 5850 2    39   ~ 0
 SPI1_MISO
-Text Label 5950 1950 2    39   ~ 0
+Text Label 1150 6150 2    39   ~ 0
 ~REQ
-Text Label 5950 1450 2    39   ~ 0
+Text Label 1150 5650 2    39   ~ 0
 SPI2_MOSI
-Text Label 6550 1650 0    39   ~ 0
+Text Label 1750 5850 0    39   ~ 0
 IRQ_WAKEUP
-Text Label 6550 950  0    39   ~ 0
+Text Label 1750 5150 0    39   ~ 0
 CPLD_EXT_CLK
-Text Label 6550 1550 0    39   ~ 0
+Text Label 1750 5750 0    39   ~ 0
 SPI1_MOSI
-Text Label 5950 1550 2    39   ~ 0
+Text Label 1150 5750 2    39   ~ 0
 SPI1_CLK
-Text Label 5950 1350 2    39   ~ 0
+Text Label 1150 5550 2    39   ~ 0
 SPI2_CLK
-Text Label 6550 1350 0    39   ~ 0
+Text Label 1750 5550 0    39   ~ 0
 SPI2_CS
-Text Label 5950 950  2    39   ~ 0
+Text Label 1150 5150 2    39   ~ 0
 SPI1_CS_0
-Text Label 6550 1850 0    39   ~ 0
+Text Label 1750 6050 0    39   ~ 0
 ~LED_INT
-Text Label 5950 1750 2    39   ~ 0
+Text Label 1150 5950 2    39   ~ 0
 ~LED_RESET
-Text Label 6550 2350 0    39   ~ 0
+Text Label 1750 6550 0    39   ~ 0
 GND
-Text Label 6550 2450 0    39   ~ 0
+Text Label 1750 6650 0    39   ~ 0
 GND
-Text Label 5950 2350 2    39   ~ 0
+Text Label 1150 6550 2    39   ~ 0
 GND
-Text Label 5950 2450 2    39   ~ 0
+Text Label 1150 6650 2    39   ~ 0
 GND
-NoConn ~ 6550 1950
+NoConn ~ 1750 6150
 $Comp
 L CONN_02X16 P2
 U 1 1 590B4E3D
-P 6250 1700
-F 0 "P2" H 6250 2550 50  0000 C CNN
-F 1 "Sensor Socket" V 6250 1700 50  0000 C CNN
-F 2 "r2Parts:DF12(3.0)-32DS-0.5V(86)" H 6250 800 39  0000 C CNN
-F 3 "" H 6250 600 50  0000 C CNN
-F 4 "DF12(4.0)-32DP-0.5V(86)" H 6250 850 39  0001 C CNN "Manu_Number"
-F 5 "Hirose Electric Co Ltd" H 6250 1700 39  0001 C CNN "Manu_Name"
-F 6 "H11708TR-ND" H 6250 1700 39  0001 C CNN "Digikey_Number"
-	1    6250 1700
+P 1450 5900
+F 0 "P2" H 1450 6750 50  0000 C CNN
+F 1 "Sensor Socket" V 1450 5900 50  0000 C CNN
+F 2 "r2Parts:DF12(3.0)-32DS-0.5V(86)" H 1450 5000 39  0000 C CNN
+F 3 "" H 1450 4800 50  0000 C CNN
+F 4 "DF12(4.0)-32DP-0.5V(86)" H 1450 5050 39  0001 C CNN "Manu_Number"
+F 5 "Hirose Electric Co Ltd" H 1450 5900 39  0001 C CNN "Manu_Name"
+F 6 "H11708TR-ND" H 1450 5900 39  0001 C CNN "Digikey_Number"
+	1    1450 5900
 	-1   0    0    1   
 $EndComp
-NoConn ~ 5950 2150
-NoConn ~ 6550 2250
+NoConn ~ 1150 6350
+NoConn ~ 1750 6450
 Text Label 950  3550 2    39   ~ 0
 SPI2_CS
 Text Label 950  2300 2    39   ~ 0
@@ -195,7 +181,7 @@ Text Label 950  3650 2    39   ~ 0
 SPI2_CLK
 Text Label 950  2200 2    39   ~ 0
 ~LED_RESET
-Text Label 6550 2150 0    39   ~ 0
+Text Label 1750 6350 0    39   ~ 0
 VCC1
 Text Label 950  2100 2    39   ~ 0
 I2C_SCL_LV
@@ -250,17 +236,17 @@ Text Label 950  4350 2    39   ~ 0
 VCC1
 Text Label 1800 1700 0    39   ~ 0
 Vbatt
-Text Label 1050 6300 1    39   ~ 0
+Text Label 4700 2100 1    39   ~ 0
 GND
 $Comp
 L GND #PWR01
 U 1 1 59110AC7
-P 1050 6450
-F 0 "#PWR01" H 1050 6200 50  0001 C CNN
-F 1 "GND" H 1050 6300 50  0000 C CNN
-F 2 "" H 1050 6450 50  0000 C CNN
-F 3 "" H 1050 6450 50  0000 C CNN
-	1    1050 6450
+P 4700 2250
+F 0 "#PWR01" H 4700 2000 50  0001 C CNN
+F 1 "GND" H 4700 2100 50  0000 C CNN
+F 2 "" H 4700 2250 50  0000 C CNN
+F 3 "" H 4700 2250 50  0000 C CNN
+	1    4700 2250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,23 +260,23 @@ F 3 "" H 5500 4350 50  0000 C CNN
 	1    5500 4350
 	1    0    0    -1  
 $EndComp
-Text Label 2000 5350 0    39   ~ 0
+Text Label 7050 1850 0    39   ~ 0
 GND
-Text Label 2000 5450 0    39   ~ 0
+Text Label 7050 1950 0    39   ~ 0
 VCC1
-Text Label 1400 5750 2    39   ~ 0
+Text Label 6450 2250 2    39   ~ 0
 TDI
-Text Label 1400 5450 2    39   ~ 0
+Text Label 6450 1950 2    39   ~ 0
 TDO
-Text Label 1400 5350 2    39   ~ 0
+Text Label 6450 1850 2    39   ~ 0
 TCK
-Text Label 5950 1150 2    39   ~ 0
+Text Label 1150 5350 2    39   ~ 0
 TCK
-Text Label 6550 1150 0    39   ~ 0
+Text Label 1750 5350 0    39   ~ 0
 TMS
-Text Label 5950 1050 2    39   ~ 0
+Text Label 1150 5250 2    39   ~ 0
 TDI
-Text Label 6550 1050 0    39   ~ 0
+Text Label 1750 5250 0    39   ~ 0
 TDO
 Text Label 3850 4800 0    39   ~ 0
 GND
@@ -336,27 +322,13 @@ Text Label 4050 3250 0    39   ~ 0
 GND
 Text Label 4050 4150 0    39   ~ 0
 GND
-$Comp
-L R R4
-U 1 1 5936A287
-P 1700 5100
-F 0 "R4" V 1780 5100 50  0000 C CNN
-F 1 "1k" V 1700 5100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 1630 5100 50  0001 C CNN
-F 3 "" H 1700 5100 50  0000 C CNN
-F 4 "ERJ-2RKF1001X" V 1700 5100 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" V 1700 5100 60  0001 C CNN "Manu_Name"
-F 6 "P1.00KLCT-ND" V 1700 5100 60  0001 C CNN "Digikey_Number"
-	1    1700 5100
-	0    1    -1   0   
-$EndComp
-Text Label 1400 5550 2    39   ~ 0
+Text Label 6450 2050 2    39   ~ 0
 TMS
-Text Label 1500 5100 2    39   ~ 0
+Text Label 6550 1600 2    39   ~ 0
 TCK
-Text Label 1900 5100 0    39   ~ 0
+Text Label 6950 1600 0    39   ~ 0
 GND
-Text Label 1450 6300 2    39   ~ 0
+Text Label 5100 2100 2    39   ~ 0
 GND
 $Comp
 L C C1
@@ -371,20 +343,6 @@ F 5 "Murata Electronics North America" H 5500 4000 60  0001 C CNN "Manu_Name"
 F 6 "490-3340-1-ND" H 5500 4000 60  0001 C CNN "Digikey_Number"
 	1    5500 4000
 	1    0    0    -1  
-$EndComp
-$Comp
-L R R3
-U 1 1 59B3C0DB
-P 4950 5050
-F 0 "R3" V 5030 5050 50  0000 C CNN
-F 1 "1k" V 4950 5050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 4880 5050 50  0001 C CNN
-F 3 "" H 4950 5050 50  0000 C CNN
-F 4 "ERJ-2RKF1001X" V 4950 5050 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" V 4950 5050 60  0001 C CNN "Manu_Name"
-F 6 "P1.00KLCT-ND" V 4950 5050 60  0001 C CNN "Digikey_Number"
-	1    4950 5050
-	0    1    -1   0   
 $EndComp
 Text Label 7000 3250 0    39   ~ 0
 GND
@@ -469,12 +427,12 @@ Text Label 2850 4350 2    39   ~ 0
 $Comp
 L CONN_02X05 J8
 U 1 1 59C13C43
-P 1700 5550
-F 0 "J8" H 1700 5850 50  0000 C CNN
-F 1 "JTAG" H 1700 5250 50  0000 C CNN
-F 2 "Connect:IDC_Header_Straight_10pins" H 1700 4350 50  0001 C CNN
-F 3 "" H 1700 4350 50  0001 C CNN
-	1    1700 5550
+P 6750 2050
+F 0 "J8" H 6750 2350 50  0000 C CNN
+F 1 "JTAG" H 6750 1750 50  0000 C CNN
+F 2 "Connect:IDC_Header_Straight_10pins" H 6750 850 50  0001 C CNN
+F 3 "" H 6750 850 50  0001 C CNN
+	1    6750 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -496,9 +454,9 @@ F 0 "J7" H 2800 1200 50  0000 C CNN
 F 1 "Li-Po" V 2900 1050 50  0000 C CNN
 F 2 "r2Parts:JST-Battery-Right-Angle" H 2800 1050 50  0001 C CNN
 F 3 "" H 2800 1050 50  0001 C CNN
-F 4 "JST Sales America Inc." H 2800 1050 60  0001 C CNN "ManuName"
-F 5 "455-1749-6-ND" H 2800 1050 60  0001 C CNN "DigikeyNum"
-F 6 "S2B-PH-SM4-TB(LF)(SN)" H 2800 1050 60  0001 C CNN "ManuNum"
+F 4 "S2B-PH-SM4-TB(LF)(SN)" H 2800 1050 60  0001 C CNN "Manu_Number"
+F 5 "JST Sales America Inc." H 2800 1050 60  0001 C CNN "Manu_Name"
+F 6 "455-1749-6-ND" H 2800 1050 60  0001 C CNN "Digikey_Number"
 	1    2800 1050
 	1    0    0    -1  
 $EndComp
@@ -508,27 +466,13 @@ U 1 1 59C172EA
 P 5250 4850
 F 0 "D2" H 5100 4900 39  0000 L CNN
 F 1 "Vcc0" H 5300 4950 39  0000 L CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 5250 4850 50  0001 C CNN
+F 2 "Diodes_SMD:D_0603" V 5250 4850 50  0001 C CNN
 F 3 "" V 5250 4850 50  0000 C CNN
-F 4 "LNJ347W83RA" H 5250 4850 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" H 5250 4850 60  0001 C CNN "Manu_Name"
-F 6 "LNJ347W83RACT-ND" H 5250 4850 60  0001 C CNN "Digikey_Number"
+F 4 "150060GS75000" H 5250 4850 60  0001 C CNN "Manu_Number"
+F 5 "Wurth Electronics Inc." H 5250 4850 60  0001 C CNN "Manu_Name"
+F 6 "732-4971-1-ND" H 5250 4850 60  0001 C CNN "Digikey_Number"
 	1    5250 4850
 	-1   0    0    1   
-$EndComp
-$Comp
-L R R2
-U 1 1 59C172F6
-P 4950 4850
-F 0 "R2" V 5030 4850 50  0000 C CNN
-F 1 "1k" V 4950 4850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 4880 4850 50  0001 C CNN
-F 3 "" H 4950 4850 50  0000 C CNN
-F 4 "ERJ-2RKF1001X" V 4950 4850 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" V 4950 4850 60  0001 C CNN "Manu_Name"
-F 6 "P1.00KLCT-ND" V 4950 4850 60  0001 C CNN "Digikey_Number"
-	1    4950 4850
-	0    1    -1   0   
 $EndComp
 Text Label 4750 5050 2    39   ~ 0
 VCC1
@@ -537,20 +481,6 @@ VCC0
 Text Label 6050 5200 2    39   ~ 0
 GND
 $Comp
-L LED_Small D1
-U 1 1 59C17BFE
-P 5250 5250
-F 0 "D1" H 5100 5300 39  0000 L CNN
-F 1 "Charge" H 5250 5350 39  0000 L CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 5250 5250 50  0001 C CNN
-F 3 "" V 5250 5250 50  0000 C CNN
-F 4 "LNJ347W83RA" H 5250 5250 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" H 5250 5250 60  0001 C CNN "Manu_Name"
-F 6 "LNJ347W83RACT-ND" H 5250 5250 60  0001 C CNN "Digikey_Number"
-	1    5250 5250
-	-1   0    0    1   
-$EndComp
-$Comp
 L R R1
 U 1 1 59C17C09
 P 4950 5250
@@ -558,9 +488,9 @@ F 0 "R1" V 5030 5250 50  0000 C CNN
 F 1 "1k" V 4950 5250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402_NoSilk" V 4880 5250 50  0001 C CNN
 F 3 "" H 4950 5250 50  0000 C CNN
-F 4 "ERJ-2RKF1001X" V 4950 5250 60  0001 C CNN "Manu_Number"
-F 5 "Panasonic Electronic Components" V 4950 5250 60  0001 C CNN "Manu_Name"
-F 6 "P1.00KLCT-ND" V 4950 5250 60  0001 C CNN "Digikey_Number"
+F 4 "RC0402JR-071KL" V 4950 5250 60  0001 C CNN "Manu_Number"
+F 5 "Yageo" V 4950 5250 60  0001 C CNN "Manu_Name"
+F 6 "311-1.0KJRCT-ND" V 4950 5250 60  0001 C CNN "Digikey_Number"
 	1    4950 5250
 	0    1    -1   0   
 $EndComp
@@ -574,11 +504,11 @@ Text Label 4200 2000 0    39   ~ 0
 ~2V5
 Text Label 3600 1100 1    39   ~ 0
 VCC1
-Text Label 2000 5750 0    39   ~ 0
+Text Label 7050 2250 0    39   ~ 0
 GND
-NoConn ~ 1450 5650
-NoConn ~ 1950 5650
-NoConn ~ 1950 5550
+NoConn ~ 6500 2150
+NoConn ~ 7000 2150
+NoConn ~ 7000 2050
 $Comp
 L SW_Push SW3
 U 1 1 59C1BBC7
@@ -618,7 +548,7 @@ Text Notes 1850 4550 2    60   ~ 0
 Level-shifter socket
 Text Label 950  4250 2    39   ~ 0
 GND
-Text Notes 3200 6350 0    118  ~ 0
+Text Notes 4050 1100 0    118  ~ 0
 NOTE: This design assumes that the \nsystem half of the voltage regulator\nis always running at 3.3v.
 Text Label 6050 4900 2    39   ~ 0
 GND
@@ -671,69 +601,69 @@ Wire Wire Line
 Wire Wire Line
 	4800 5050 4750 5050
 Wire Wire Line
-	5950 2150 6000 2150
+	1150 6350 1200 6350
 Wire Wire Line
-	5950 1750 6000 1750
+	1150 5950 1200 5950
 Wire Wire Line
-	5950 1850 6000 1850
+	1150 6050 1200 6050
 Wire Wire Line
-	5950 1950 6000 1950
+	1150 6150 1200 6150
 Wire Wire Line
-	5950 2050 6000 2050
+	1150 6250 1200 6250
 Wire Wire Line
-	5950 2250 6000 2250
+	1150 6450 1200 6450
 Wire Wire Line
-	5950 2350 6000 2350
+	1150 6550 1200 6550
 Wire Wire Line
-	5950 2450 6000 2450
+	1150 6650 1200 6650
 Wire Wire Line
-	5950 1450 6000 1450
+	1150 5650 1200 5650
 Wire Wire Line
-	5950 950  6000 950 
+	1150 5150 1200 5150
 Wire Wire Line
-	5950 1050 6000 1050
+	1150 5250 1200 5250
 Wire Wire Line
-	5950 1150 6000 1150
+	1150 5350 1200 5350
 Wire Wire Line
-	5950 1250 6000 1250
+	1150 5450 1200 5450
 Wire Wire Line
-	5950 1350 6000 1350
+	1150 5550 1200 5550
 Wire Wire Line
-	5950 1550 6000 1550
+	1150 5750 1200 5750
 Wire Wire Line
-	5950 1650 6000 1650
+	1150 5850 1200 5850
 Wire Wire Line
-	6500 1750 6550 1750
+	1700 5950 1750 5950
 Wire Wire Line
-	6500 1850 6550 1850
+	1700 6050 1750 6050
 Wire Wire Line
-	6500 1950 6550 1950
+	1700 6150 1750 6150
 Wire Wire Line
-	6500 2050 6550 2050
+	1700 6250 1750 6250
 Wire Wire Line
-	6500 2150 6550 2150
+	1700 6350 1750 6350
 Wire Wire Line
-	6500 2250 6550 2250
+	1700 6450 1750 6450
 Wire Wire Line
-	6500 2450 6550 2450
+	1700 6650 1750 6650
 Wire Wire Line
-	6500 1450 6550 1450
+	1700 5650 1750 5650
 Wire Wire Line
-	6500 950  6550 950 
+	1700 5150 1750 5150
 Wire Wire Line
-	6500 1050 6550 1050
+	1700 5250 1750 5250
 Wire Wire Line
-	6500 1150 6550 1150
+	1700 5350 1750 5350
 Wire Wire Line
-	6500 1250 6550 1250
+	1700 5450 1750 5450
 Wire Wire Line
-	6500 1350 6550 1350
+	1700 5550 1750 5550
 Wire Wire Line
-	6500 1550 6550 1550
+	1700 5750 1750 5750
 Wire Wire Line
-	6500 1650 6550 1650
+	1700 5850 1750 5850
 Wire Wire Line
-	6500 2350 6550 2350
+	1700 6550 1750 6550
 Wire Wire Line
 	950  3750 1000 3750
 Wire Wire Line
@@ -792,7 +722,7 @@ Wire Wire Line
 	5500 3850 5500 3050
 Connection ~ 5500 3050
 Wire Wire Line
-	1050 6300 1050 6450
+	4700 2100 4700 2250
 Wire Wire Line
 	4600 4150 4600 4250
 Wire Wire Line
@@ -833,11 +763,11 @@ Connection ~ 3800 4800
 Wire Wire Line
 	2850 4450 2900 4450
 Wire Wire Line
-	1550 5100 1500 5100
+	6600 1600 6550 1600
 Wire Wire Line
-	1900 5100 1850 5100
+	6950 1600 6900 1600
 Wire Wire Line
-	1450 6300 1500 6300
+	5100 2100 5150 2100
 Wire Wire Line
 	6950 3250 7000 3250
 Wire Wire Line
@@ -927,19 +857,19 @@ Wire Wire Line
 Wire Wire Line
 	6050 4900 6150 4900
 Wire Wire Line
-	2000 5350 1950 5350
+	7050 1850 7000 1850
 Wire Wire Line
-	1950 5450 2000 5450
+	7000 1950 7050 1950
 Wire Wire Line
-	2000 5750 1950 5750
+	7050 2250 7000 2250
 Wire Wire Line
-	1450 5350 1400 5350
+	6500 1850 6450 1850
 Wire Wire Line
-	1400 5450 1450 5450
+	6450 1950 6500 1950
 Wire Wire Line
-	1450 5550 1400 5550
+	6500 2050 6450 2050
 Wire Wire Line
-	1400 5750 1450 5750
+	6450 2250 6500 2250
 Wire Wire Line
 	6600 4900 6550 4900
 Wire Wire Line
@@ -1077,18 +1007,18 @@ Wire Wire Line
 $Comp
 L CONN_01X01 P4
 U 1 1 59EE944A
-P 1700 6650
-F 0 "P4" H 1700 6750 50  0000 C CNN
-F 1 "CONN_01X01" V 1800 6650 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1700 6550 50  0000 C CNN
-F 3 "" H 1700 6650 50  0000 C CNN
-	1    1700 6650
+P 5350 2450
+F 0 "P4" H 5350 2550 50  0000 C CNN
+F 1 "CONN_01X01" V 5450 2450 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 5350 2350 50  0000 C CNN
+F 3 "" H 5350 2450 50  0000 C CNN
+	1    5350 2450
 	1    0    0    -1  
 $EndComp
-Text Label 1450 6650 2    39   ~ 0
+Text Label 5100 2450 2    39   ~ 0
 GND
 Wire Wire Line
-	1450 6650 1500 6650
+	5100 2450 5150 2450
 $Comp
 L CONN_02X15 J9
 U 1 1 59EE8566
@@ -1127,5 +1057,75 @@ F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 3300 950 50  0001 C CNN
 F 3 "" H 3300 950 50  0001 C CNN
 	1    3300 2150
 	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Small D3
+U 1 1 59F2CEEE
+P 5250 5050
+F 0 "D3" H 5100 5100 39  0000 L CNN
+F 1 "Vcc1" H 5300 5150 39  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 5250 5050 50  0001 C CNN
+F 3 "" V 5250 5050 50  0000 C CNN
+F 4 "150060GS75000" H 5250 5050 60  0001 C CNN "Manu_Number"
+F 5 "Wurth Electronics Inc." H 5250 5050 60  0001 C CNN "Manu_Name"
+F 6 "732-4971-1-ND" H 5250 5050 60  0001 C CNN "Digikey_Number"
+	1    5250 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED_Small D1
+U 1 1 59F2CF62
+P 5250 5250
+F 0 "D1" H 5100 5300 39  0000 L CNN
+F 1 "Charge" H 5300 5350 39  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 5250 5250 50  0001 C CNN
+F 3 "" V 5250 5250 50  0000 C CNN
+F 4 "150060GS75000" H 5250 5250 60  0001 C CNN "Manu_Number"
+F 5 "Wurth Electronics Inc." H 5250 5250 60  0001 C CNN "Manu_Name"
+F 6 "732-4971-1-ND" H 5250 5250 60  0001 C CNN "Digikey_Number"
+	1    5250 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 59F4794B
+P 4950 4850
+F 0 "R2" V 5030 4850 50  0000 C CNN
+F 1 "680" V 4950 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 4880 4850 50  0001 C CNN
+F 3 "" H 4950 4850 50  0000 C CNN
+F 4 "RC0402JR-07680RL" V 4950 4850 60  0001 C CNN "Manu_Number"
+F 5 "Yageo" V 4950 4850 60  0001 C CNN "Manu_Name"
+F 6 "311-680JRCT-ND" V 4950 4850 60  0001 C CNN "Digikey_Number"
+	1    4950 4850
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 59F47A6E
+P 4950 5050
+F 0 "R3" V 5030 5050 50  0000 C CNN
+F 1 "680" V 4950 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 4880 5050 50  0001 C CNN
+F 3 "" H 4950 5050 50  0000 C CNN
+F 4 "RC0402JR-07680RL" V 4950 5050 60  0001 C CNN "Manu_Number"
+F 5 "Yageo" V 4950 5050 60  0001 C CNN "Manu_Name"
+F 6 "311-680JRCT-ND" V 4950 5050 60  0001 C CNN "Digikey_Number"
+	1    4950 5050
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59F48008
+P 6750 1600
+F 0 "R4" V 6830 1600 50  0000 C CNN
+F 1 "1k" V 6750 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 6680 1600 50  0001 C CNN
+F 3 "" H 6750 1600 50  0000 C CNN
+F 4 "RC0402JR-071KL" V 6750 1600 60  0001 C CNN "Manu_Number"
+F 5 "Yageo" V 6750 1600 60  0001 C CNN "Manu_Name"
+F 6 "311-1.0KJRCT-ND" V 6750 1600 60  0001 C CNN "Digikey_Number"
+	1    6750 1600
+	0    1    -1   0   
 $EndComp
 $EndSCHEMATC
