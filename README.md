@@ -23,9 +23,8 @@ r2-Digit | Flex circuit for digits. (Pending release)
 [Compute-WROOM32](Compute-WROOM32) | A digitabulum compute PCB based on Espressif's WROOM32 module.
 [PowerPlant-Module](PowerPlant-Module) | Digitabulum's power-management block implemented as a stand-alone breadboard module.
 [r2-Harness](r2-Harness) | A debugging and development tool. It adapts a Digitabulum board to a standard breadboard. It is also useful as a template for a custom backplane.
-Digit-Harness | A debugging and development tool. It adapts Digitabulum flex circuits to a standard breadboard. (Pending release)
 [Compute-Template](Compute-Template) | A debugging and development tool. Provides a breakout to the compute/comm PCB connector on the r2-Backplane. It is also useful as a template for a custom Compute PCB.
-
+[SmallTools](SmallTools) | Debugging and development tools.
 
 ------------------------
 
