@@ -7,12 +7,13 @@
          ._|                      
 
 
-KiCAD source files for Manuvr's motion capture glove.
+Hardware source files for Manuvr's motion capture glove.
 
 ------------------------
 
 ## KiCAD Projects in this repo
 
+### Production Parts
 
 Project | Purpose
 :-----|:------
@@ -21,10 +22,26 @@ r2-Metacarpals | Flex circuit for the metacarpals. (Pending release)
 r2-Digit | Flex circuit for digits. (Pending release)
 [r2-Backplane](r2-Backplane) | A backplane PCB containing the power-management block and associated support circuits.
 [Compute-WROOM32](Compute-WROOM32) | A digitabulum compute PCB based on Espressif's WROOM32 module.
+
+
+
+### Hacking and Development Tools
+
+Project | Purpose
+:-----|:------
+[r2-Dev-Backplane](r2-Dev-Backplane) | A backplane intended for developing CPLD images, Compute PCBs, and power management subsystems.
 [PowerPlant-Module](PowerPlant-Module) | Digitabulum's power-management block implemented as a stand-alone breadboard module.
-[r2-Harness](r2-Harness) | A debugging and development tool. It adapts a Digitabulum board to a standard breadboard. It is also useful as a template for a custom backplane.
-[Compute-Template](Compute-Template) | A debugging and development tool. Provides a breakout to the compute/comm PCB connector on the r2-Backplane. It is also useful as a template for a custom Compute PCB.
+[r2-Adapter](r2-Adapter) | A debugging and development tool. It adapts a Digitabulum board to a standard breadboard. It is also useful as a template for a custom backplane.
+[Compute-Template](Compute-Template) | A debugging and development tool. Provides a breakout to the compute/comm PCB connector on an r2-Backplane. It is also useful as a template for a custom Compute PCB.
 [SmallTools](SmallTools) | Debugging and development tools.
+
+
+------------------------
+
+## 3D Models
+
+Blender files for various casings and mocks can be found in the [3DModels](3DModels directory).
+
 
 ------------------------
 

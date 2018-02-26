@@ -1,4 +1,4 @@
-# r2-Harness
+# r2-Adapter
 
 This is a breadboard adapter for Digitabulum-r2. All signals are broken out and labeled.
 

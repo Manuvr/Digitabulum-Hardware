@@ -1,4 +1,4 @@
-# r2-DevKit
+# r2-Dev-Backplane
 
 This is a backplane PCB for Digitabulum. When combined with the [PowerPlant](../PowerPlant-Module), it has the same schematic as the [r2-Backplane](../r2-Backplane).
 

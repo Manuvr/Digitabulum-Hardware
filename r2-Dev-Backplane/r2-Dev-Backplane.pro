@@ -1,4 +1,4 @@
-update=Sat 21 Jan 2017 01:17:17 AM PST
+update=Mon 26 Feb 2018 12:46:10 AM MST
 version=1
 last_client=kicad
 [cvpcb]
@@ -52,7 +52,7 @@ LibName21=manuvr_logo
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../r2-Backplane;../../Digitabulum-Hardware
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -83,3 +83,15 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=IansParts
+LibName31=switches
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
