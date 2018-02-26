@@ -1,6 +1,6 @@
 # r2-DevKit
 
-This is a backplane PCB for Digitabulum. When combined with the [PowerPlant](../PowerPlant-Module) and [level shift](../SmallTools) modules, it has the same schematic as the [r2-Backplane](../r2-Backplane).
+This is a backplane PCB for Digitabulum. When combined with the [PowerPlant](../PowerPlant-Module), it has the same schematic as the [r2-Backplane](../r2-Backplane).
 
 ## Intended usage
 
@@ -24,4 +24,4 @@ Front | Back
 ![Front](osh-render-front.png) | ![Back](osh-render-back.png)
 
 
-[<img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park">](https://oshpark.com/shared_projects/iY6Of1fl)
+[<img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park">](https://oshpark.com/shared_projects/xQ4Oilyu)
