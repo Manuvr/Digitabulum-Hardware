@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:IansParts
+EESchema Schematic File Version 4
 LIBS:r2-Backplane-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr User 11811 7874
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X01 P1
+L r2-Backplane-rescue:CONN_01X01 P1
 U 1 1 584C56F1
 P 10500 3200
 F 0 "P1" H 10500 3300 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "" H 10500 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P2
+L r2-Backplane-rescue:CONN_01X02 P2
 U 1 1 58831C28
 P 8750 5550
 F 0 "P2" H 8750 5700 50  0000 C CNN
@@ -69,7 +39,7 @@ $EndComp
 Text Label 8250 5500 2    39   ~ 0
 GND
 $Comp
-L USB-MICRO-B CON1
+L IansParts:USB-MICRO-B CON1
 U 1 1 58FD5CC6
 P 4250 5750
 F 0 "CON1" H 4400 6000 60  0000 C CNN
@@ -83,7 +53,7 @@ F 6 "H12192CT-ND" H 4250 5750 60  0001 C CNN "Digikey_Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C4
+L r2-Backplane-rescue:C C4
 U 1 1 58FD95EB
 P 2500 2100
 F 0 "C4" H 2525 2200 50  0000 L CNN
@@ -97,7 +67,7 @@ F 6 "490-1719-1-ND" H 2500 2100 60  0001 C CNN "Digikey_Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C5
+L r2-Backplane-rescue:C C5
 U 1 1 58FDA441
 P 2750 2100
 F 0 "C5" H 2775 2200 50  0000 L CNN
@@ -111,7 +81,7 @@ F 6 "490-3340-1-ND" H 2750 2100 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L r2-Backplane-rescue:GND #PWR01
 U 1 1 58FDA976
 P 3300 2500
 F 0 "#PWR01" H 3300 2250 50  0001 C CNN
@@ -126,7 +96,7 @@ VCC0
 Text Label 3950 1700 0    39   ~ 0
 VCC1
 $Comp
-L GND #PWR02
+L r2-Backplane-rescue:GND #PWR02
 U 1 1 58FDFFBB
 P 5350 4200
 F 0 "#PWR02" H 5350 3950 50  0001 C CNN
@@ -141,7 +111,7 @@ I2C_SDA
 Text Label 4650 3200 2    39   ~ 0
 I2C_SCL
 $Comp
-L C C2
+L r2-Backplane-rescue:C C2
 U 1 1 58FE3827
 P 4400 3900
 F 0 "C2" H 4425 4000 50  0000 L CNN
@@ -155,7 +125,7 @@ F 6 "490-3335-1-ND" H 4400 3900 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
+L r2-Backplane-rescue:C C9
 U 1 1 58FE3953
 P 6500 3950
 F 0 "C9" H 6525 4050 50  0000 L CNN
@@ -169,7 +139,7 @@ F 6 "490-3340-1-ND" H 6500 3950 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C7
+L r2-Backplane-rescue:C C7
 U 1 1 58FE3B83
 P 6250 3950
 F 0 "C7" H 6275 4050 50  0000 L CNN
@@ -183,7 +153,7 @@ F 6 "490-1320-1-ND" H 6250 3950 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L r2-Backplane-rescue:R R4
 U 1 1 58FE4D5D
 P 6700 3650
 F 0 "R4" V 6700 3650 50  0000 C CNN
@@ -197,7 +167,7 @@ F 6 "CSRN2512FK68L0CT-ND" V 6700 3650 60  0001 C CNN "Digikey_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C8
+L r2-Backplane-rescue:C C8
 U 1 1 58FE5D97
 P 6450 3200
 F 0 "C8" H 6475 3300 50  0000 L CNN
@@ -211,7 +181,7 @@ F 6 "399-1279-1-ND" H 6450 3200 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L r2-Backplane-rescue:C C12
 U 1 1 58FE6B58
 P 6900 3950
 F 0 "C12" H 6925 4050 50  0000 L CNN
@@ -231,7 +201,7 @@ VCCUSB
 Text Label 9850 5550 2    39   ~ 0
 VCC1
 $Comp
-L BQ24155 U6
+L IansParts:BQ24155 U6
 U 1 1 5904EED7
 P 5450 3350
 F 0 "U6" H 5350 3350 60  0000 C CNN
@@ -269,7 +239,7 @@ ALERT
 Text Label 2450 5550 3    39   ~ 0
 ALERT
 $Comp
-L LED_Small D1
+L r2-Backplane-rescue:LED_Small D1
 U 1 1 590A96D2
 P 4600 3300
 F 0 "D1" H 4450 3350 39  0000 L CNN
@@ -338,7 +308,7 @@ Text Label 9850 5750 2    39   ~ 0
 GND
 NoConn ~ 10450 5250
 $Comp
-L CONN_02X16 P3
+L r2-Backplane-rescue:CONN_02X16 P3
 U 1 1 590B4E3D
 P 10150 5000
 F 0 "P3" H 10150 5850 50  0000 C CNN
@@ -398,7 +368,7 @@ GND
 Text Label 10800 2150 0    39   ~ 0
 VCC0
 $Comp
-L LSF0204x U2
+L IansParts:LSF0204x U2
 U 1 1 590CEE38
 P 1650 3800
 F 0 "U2" H 1650 3800 47  0000 C CNN
@@ -440,7 +410,7 @@ I2C_SCL
 Text Label 3050 4650 0    39   ~ 0
 VCCUSB
 $Comp
-L EMIF02-USB03F2 U8
+L IansParts:EMIF02-USB03F2 U8
 U 1 1 590E1F8E
 P 5500 6000
 F 0 "U8" H 5300 6100 60  0000 C CNN
@@ -475,7 +445,7 @@ GND
 Text Label 9300 1400 0    39   ~ 0
 VCC0
 $Comp
-L CAPARRAY_4 CARY2
+L IansParts:CAPARRAY_4 CARY2
 U 1 1 590F6949
 P 8750 2450
 F 0 "CARY2" H 8750 1850 60  0000 C CNN
@@ -505,7 +475,7 @@ Vbatt
 Text Label 11100 3100 1    39   ~ 0
 GND
 $Comp
-L GND #PWR03
+L r2-Backplane-rescue:GND #PWR03
 U 1 1 59110AC7
 P 11100 3250
 F 0 "#PWR03" H 11100 3000 50  0001 C CNN
@@ -526,9 +496,9 @@ Wire Wire Line
 Wire Wire Line
 	3900 1700 4600 1700
 Wire Wire Line
-	3300 2400 3300 2500
+	3300 2400 3300 2450
 Wire Wire Line
-	1050 2450 4600 2450
+	1050 2450 1300 2450
 Wire Wire Line
 	3100 2400 3100 2450
 Connection ~ 3100 2450
@@ -546,25 +516,23 @@ Connection ~ 3500 2450
 Connection ~ 3300 2450
 Connection ~ 3400 2450
 Wire Wire Line
-	2750 1100 2750 1950
+	2750 1100 2750 1200
 Wire Wire Line
 	3900 1900 4050 1900
 Wire Wire Line
 	2750 2250 2750 2450
 Connection ~ 2750 2450
 Wire Wire Line
-	3300 2450 3300 2450
-Wire Wire Line
 	3950 1400 3900 1400
 Wire Wire Line
-	3900 1100 4100 1100
+	3900 1100 3950 1100
 Connection ~ 3950 1200
 Connection ~ 3950 1100
 Connection ~ 2750 1900
 Wire Wire Line
 	2750 1400 2800 1400
 Wire Wire Line
-	2450 1100 2800 1100
+	2450 1100 2750 1100
 Wire Wire Line
 	2800 1200 2750 1200
 Connection ~ 2750 1200
@@ -586,7 +554,7 @@ Connection ~ 1300 2450
 Wire Wire Line
 	1050 1850 1050 1700
 Wire Wire Line
-	1800 1550 1800 1850
+	1800 1550 1800 1700
 Connection ~ 1800 1700
 Wire Wire Line
 	1550 1700 1550 1850
@@ -597,16 +565,16 @@ Connection ~ 1300 1700
 Wire Wire Line
 	5250 4150 5250 4100
 Wire Wire Line
-	5350 4100 5350 4200
+	5350 4100 5350 4150
 Connection ~ 5350 4150
 Wire Wire Line
 	5450 4150 5450 4100
 Wire Wire Line
-	3950 6650 5000 6650
+	3950 6650 4050 6650
 Wire Wire Line
 	5000 6650 5000 6050
 Wire Wire Line
-	4800 6050 5150 6050
+	4800 6050 5000 6050
 Wire Wire Line
 	4050 6550 4050 6650
 Connection ~ 4050 6650
@@ -638,7 +606,7 @@ Connection ~ 5450 4150
 Wire Wire Line
 	6150 3800 6100 3800
 Wire Wire Line
-	6100 3650 6550 3650
+	6100 3650 6150 3650
 Wire Wire Line
 	6100 3200 6300 3200
 Wire Wire Line
@@ -649,7 +617,7 @@ Wire Wire Line
 	6100 3500 6900 3500
 Connection ~ 6150 3650
 Wire Wire Line
-	6300 3050 6550 3050
+	6300 3050 6450 3050
 Connection ~ 6450 3050
 Connection ~ 6900 3650
 Connection ~ 6500 3650
@@ -664,9 +632,9 @@ Wire Wire Line
 	4100 4050 4100 4150
 Connection ~ 4400 4150
 Wire Wire Line
-	4100 3300 4100 3750
+	4100 3300 4100 3500
 Wire Wire Line
-	3900 3500 4750 3500
+	3900 3500 4100 3500
 Connection ~ 4100 3500
 Wire Wire Line
 	4750 3000 4650 3000
@@ -771,9 +739,9 @@ Wire Wire Line
 Wire Wire Line
 	1350 6500 1300 6500
 Wire Wire Line
-	1950 6500 2150 6500
+	1950 6500 2000 6500
 Wire Wire Line
-	9900 2000 10800 2000
+	9900 2000 10150 2000
 Wire Wire Line
 	9900 2000 9900 1950
 Wire Wire Line
@@ -795,7 +763,7 @@ Wire Wire Line
 Wire Wire Line
 	10150 1400 10150 1450
 Wire Wire Line
-	9900 2750 10800 2750
+	9900 2750 10150 2750
 Wire Wire Line
 	9900 2750 9900 2700
 Wire Wire Line
@@ -816,7 +784,6 @@ Wire Wire Line
 	10400 2200 10400 2150
 Wire Wire Line
 	10150 2150 10150 2200
-Connection ~ 10150 2150
 Wire Wire Line
 	1950 3650 2300 3650
 Wire Wire Line
@@ -854,11 +821,11 @@ Wire Wire Line
 Wire Wire Line
 	1300 6050 1350 6050
 Wire Wire Line
-	4800 5450 5150 5450
+	4800 5450 4850 5450
 Wire Wire Line
-	4800 5600 5150 5600
+	4800 5600 5100 5600
 Wire Wire Line
-	4800 5750 5150 5750
+	4800 5750 5050 5750
 Wire Wire Line
 	5150 5900 4800 5900
 Connection ~ 5000 6050
@@ -867,9 +834,9 @@ Wire Wire Line
 Wire Wire Line
 	6350 5550 6300 5550
 Wire Wire Line
-	6900 3050 6900 3800
+	6900 3050 6900 3500
 Wire Wire Line
-	4100 4150 6900 4150
+	4100 4150 4400 4150
 Wire Wire Line
 	5050 5750 5050 6450
 Connection ~ 5050 5750
@@ -889,19 +856,19 @@ Wire Wire Line
 Wire Wire Line
 	3900 1300 4850 1300
 Wire Wire Line
-	3950 1100 3950 1400
+	3950 1100 3950 1200
 Wire Wire Line
-	10400 2150 10800 2150
+	10400 2150 10650 2150
 Wire Wire Line
-	9750 2150 10150 2150
+	9750 2150 9900 2150
 Connection ~ 9900 2150
 Connection ~ 9900 1400
 Wire Wire Line
-	9750 1400 10150 1400
+	9750 1400 9900 1400
 Wire Wire Line
-	10400 1400 10800 1400
+	10400 1400 10650 1400
 Wire Wire Line
-	8400 2000 9300 2000
+	8400 2000 8650 2000
 Wire Wire Line
 	8400 2000 8400 1950
 Wire Wire Line
@@ -923,7 +890,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 1400 8650 1450
 Wire Wire Line
-	8400 2750 9300 2750
+	8400 2750 8650 2750
 Wire Wire Line
 	8400 2750 8400 2700
 Wire Wire Line
@@ -944,17 +911,16 @@ Wire Wire Line
 	8900 2200 8900 2150
 Wire Wire Line
 	8650 2150 8650 2200
-Connection ~ 8650 2150
 Wire Wire Line
-	8900 2150 9300 2150
+	8900 2150 9150 2150
 Wire Wire Line
-	8250 2150 8650 2150
+	8250 2150 8400 2150
 Connection ~ 8400 2150
 Connection ~ 8400 1400
 Wire Wire Line
-	8250 1400 8650 1400
+	8250 1400 8400 1400
 Wire Wire Line
-	8900 1400 9300 1400
+	8900 1400 9150 1400
 Wire Wire Line
 	1950 5000 2050 5000
 Connection ~ 2050 5000
@@ -966,11 +932,11 @@ Connection ~ 2000 5700
 Wire Wire Line
 	1950 4200 2050 4200
 Wire Wire Line
-	2050 4200 2050 6600
+	2050 4200 2050 5000
 Wire Wire Line
 	1950 4100 2000 4100
 Wire Wire Line
-	2000 4100 2000 6500
+	2000 4100 2000 4900
 Wire Wire Line
 	1300 5000 1350 5000
 Wire Wire Line
@@ -993,7 +959,7 @@ Connection ~ 2750 1400
 Wire Wire Line
 	2750 1900 2800 1900
 Wire Wire Line
-	4850 6550 4850 6750
+	4850 6550 4850 6650
 Connection ~ 4850 6650
 Wire Wire Line
 	4850 6250 4850 5450
@@ -1003,7 +969,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 2450 4600 2250
 Wire Wire Line
-	4600 1550 4600 1950
+	4600 1550 4600 1700
 Connection ~ 4600 1700
 Wire Wire Line
 	4050 1900 4050 2000
@@ -1017,11 +983,11 @@ Wire Wire Line
 	2500 1700 2500 1950
 Connection ~ 2500 1700
 Wire Wire Line
-	1050 1700 2800 1700
+	1050 1700 1300 1700
 Wire Wire Line
 	11100 3100 11100 3250
 $Comp
-L GND #PWR04
+L r2-Backplane-rescue:GND #PWR04
 U 1 1 58FE1622
 P 4850 6750
 F 0 "#PWR04" H 4850 6500 50  0001 C CNN
@@ -1071,7 +1037,7 @@ Connection ~ 2000 6500
 Wire Wire Line
 	1950 5700 2000 5700
 Wire Wire Line
-	1950 5800 2850 5800
+	1950 5800 2050 5800
 Wire Wire Line
 	2500 5250 2350 5250
 Wire Wire Line
@@ -1081,7 +1047,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 5350 2500 5350
 $Comp
-L QA_NPN QA_NPN1
+L IansParts:QA_NPN QA_NPN1
 U 1 1 590E03C1
 P 5200 1150
 F 0 "QA_NPN1" H 5200 1400 39  0000 C CNN
@@ -1097,7 +1063,7 @@ $EndComp
 Text Label 4700 1150 2    39   ~ 0
 VCC0
 Wire Wire Line
-	4700 1150 4850 1150
+	4700 1150 4750 1150
 Wire Wire Line
 	5550 1300 5600 1300
 Connection ~ 4750 1150
@@ -1112,7 +1078,7 @@ Wire Wire Line
 Text Label 8650 3200 2    39   ~ 0
 ~2V5
 $Comp
-L SC283 U7
+L IansParts:SC283 U7
 U 1 1 590EA43E
 P 3350 1550
 F 0 "U7" H 3100 2150 60  0000 C CNN
@@ -1150,7 +1116,7 @@ CHIP_PU
 Text Label 3050 5350 0    39   ~ 0
 PIN_0
 $Comp
-L CONN_01X08 P6
+L r2-Backplane-rescue:CONN_01X08 P6
 U 1 1 5912C416
 P 8300 4600
 F 0 "P6" H 8300 4150 50  0000 C CNN
@@ -1169,7 +1135,7 @@ CHIP_PU
 Text Label 8600 4750 0    39   ~ 0
 PIN_0
 $Comp
-L CAPARRAY_4 CARY3
+L IansParts:CAPARRAY_4 CARY3
 U 1 1 59144525
 P 8750 1700
 F 0 "CARY3" H 8750 1100 60  0000 C CNN
@@ -1183,7 +1149,7 @@ F 6 "445-1838-1-ND" H 8750 1700 60  0001 C CNN "Digikey_Number"
 	0    -1   1    0   
 $EndComp
 $Comp
-L CAPARRAY_4 CARY4
+L IansParts:CAPARRAY_4 CARY4
 U 1 1 591445D5
 P 10250 1700
 F 0 "CARY4" H 10250 1100 60  0000 C CNN
@@ -1197,7 +1163,7 @@ F 6 "445-1838-1-ND" H 10250 1700 60  0001 C CNN "Digikey_Number"
 	0    -1   1    0   
 $EndComp
 $Comp
-L CAPARRAY_4 CARY1
+L IansParts:CAPARRAY_4 CARY1
 U 1 1 5914469E
 P 10250 2450
 F 0 "CARY1" H 10250 1850 60  0000 C CNN
@@ -1211,7 +1177,7 @@ F 6 "445-1838-1-ND" H 10250 2450 60  0001 C CNN "Digikey_Number"
 	0    -1   1    0   
 $EndComp
 $Comp
-L CAPARRAY_4 CARY5
+L IansParts:CAPARRAY_4 CARY5
 U 1 1 59144C32
 P 1400 2100
 F 0 "CARY5" H 1400 1500 60  0000 C CNN
@@ -1225,7 +1191,7 @@ F 6 "445-1838-1-ND" H 1400 2100 60  0001 C CNN "Digikey_Number"
 	0    -1   1    0   
 $EndComp
 $Comp
-L HiRose-02X15 P4
+L IansParts:HiRose-02X15 P4
 U 1 1 5916BCB4
 P 2750 4750
 F 0 "P4" H 2750 5550 50  0000 C CNN
@@ -1333,7 +1299,7 @@ Connection ~ 2700 5800
 Wire Wire Line
 	4750 1150 4750 1000
 $Comp
-L R R1
+L r2-Backplane-rescue:R R1
 U 1 1 5936A287
 P 6900 1450
 F 0 "R1" V 6980 1450 50  0000 C CNN
@@ -1363,7 +1329,7 @@ Wire Wire Line
 Text Label 7200 1850 0    39   ~ 0
 VCC1
 $Comp
-L LTC2942 U5
+L IansParts:LTC2942 U5
 U 1 1 59B29880
 P 2050 1100
 F 0 "U5" H 1800 1050 60  0000 C CNN
@@ -1385,7 +1351,7 @@ Wire Notes Line
 Wire Notes Line
 	5500 800  5300 1000
 $Comp
-L L_Core_Ferrite L1
+L r2-Backplane-rescue:L_Core_Ferrite L1
 U 1 1 59B29893
 P 2300 1550
 F 0 "L1" V 2250 1450 50  0000 C CNN
@@ -1399,7 +1365,7 @@ F 6 "308-2294-1-ND" V 2300 1550 60  0001 C CNN "Digikey_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L L_Core_Ferrite L3
+L r2-Backplane-rescue:L_Core_Ferrite L3
 U 1 1 59B29894
 P 6700 3050
 F 0 "L3" V 6650 2950 50  0000 C CNN
@@ -1413,7 +1379,7 @@ F 6 "490-6699-1-ND" V 6700 3050 60  0001 C CNN "Digikey_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Polyfuse_Small F1
+L r2-Backplane-rescue:Polyfuse_Small F1
 U 1 1 59B29895
 P 8400 5600
 F 0 "F1" V 8325 5600 50  0000 C CNN
@@ -1435,7 +1401,7 @@ Wire Wire Line
 	6900 4150 6900 4100
 Connection ~ 6500 4150
 $Comp
-L L_Core_Ferrite L2
+L r2-Backplane-rescue:L_Core_Ferrite L2
 U 1 1 59B2E3C2
 P 4250 1550
 F 0 "L2" V 4200 1450 50  0000 C CNN
@@ -1449,7 +1415,7 @@ F 6 "308-2294-1-ND" V 4250 1550 60  0001 C CNN "Digikey_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LSF0204x U1
+L IansParts:LSF0204x U1
 U 1 1 59B329C3
 P 1650 4600
 F 0 "U1" H 1650 4600 47  0000 C CNN
@@ -1463,7 +1429,7 @@ F 6 "296-40404-1-ND" H 1650 4600 60  0001 C CNN "Digikey_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L LSF0204x U3
+L IansParts:LSF0204x U3
 U 1 1 59B32C7E
 P 1650 5400
 F 0 "U3" H 1650 5400 47  0000 C CNN
@@ -1477,7 +1443,7 @@ F 6 "296-40404-1-ND" H 1650 5400 60  0001 C CNN "Digikey_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L LSF0204x U4
+L IansParts:LSF0204x U4
 U 1 1 59B32DFF
 P 1650 6200
 F 0 "U4" H 1650 6200 47  0000 C CNN
@@ -1491,7 +1457,7 @@ F 6 "296-40404-1-ND" H 1650 6200 60  0001 C CNN "Digikey_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L C C11
+L r2-Backplane-rescue:C C11
 U 1 1 59B340A0
 P 4600 2100
 F 0 "C11" H 4625 2200 50  0000 L CNN
@@ -1505,7 +1471,7 @@ F 6 "490-1719-1-ND" H 4600 2100 60  0001 C CNN "Digikey_Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C10
+L r2-Backplane-rescue:C C10
 U 1 1 59B3521A
 P 4050 2150
 F 0 "C10" H 4075 2250 50  0000 L CNN
@@ -1519,7 +1485,7 @@ F 6 "490-3340-1-ND" H 4050 2150 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L r2-Backplane-rescue:C C3
 U 1 1 59B371BE
 P 4700 4000
 F 0 "C3" H 4725 4100 50  0000 L CNN
@@ -1533,7 +1499,7 @@ F 6 "490-1320-1-ND" H 4700 4000 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L r2-Backplane-rescue:C C1
 U 1 1 59B373D4
 P 4100 3900
 F 0 "C1" H 4125 4000 50  0000 L CNN
@@ -1547,7 +1513,7 @@ F 6 "490-1320-1-ND" H 4100 3900 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L r2-Backplane-rescue:C C6
 U 1 1 59B38686
 P 4850 6400
 F 0 "C6" H 4875 6500 50  0000 L CNN
@@ -1561,7 +1527,7 @@ F 6 "490-3340-1-ND" H 4850 6400 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Pack04 RP2
+L r2-Backplane-rescue:R_Pack04 RP2
 U 1 1 59B39ABE
 P 6900 2050
 F 0 "RP2" V 6600 2050 50  0000 C CNN
@@ -1575,9 +1541,9 @@ F 6 "Y10103CT-ND" V 6900 2050 60  0001 C CNN "Digikey_Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7200 1850 7100 1850
+	7200 1850 7150 1850
 Wire Wire Line
-	7150 1850 7150 2150
+	7150 1850 7150 1950
 Wire Wire Line
 	7150 2150 7100 2150
 Connection ~ 7150 1850
@@ -1595,7 +1561,7 @@ Wire Wire Line
 	6650 2150 6700 2150
 NoConn ~ 6700 1950
 $Comp
-L R R3
+L r2-Backplane-rescue:R R3
 U 1 1 59B3C0DB
 P 4300 3300
 F 0 "R3" V 4380 3300 50  0000 C CNN
@@ -1613,7 +1579,7 @@ GND
 Wire Wire Line
 	6300 5650 6350 5650
 $Comp
-L R_Pack04 RP1
+L r2-Backplane-rescue:R_Pack04 RP1
 U 1 1 59B357DE
 P 5700 6550
 F 0 "RP1" V 5400 6550 50  0000 C CNN
@@ -1629,13 +1595,13 @@ $EndComp
 Wire Wire Line
 	5500 6550 5450 6550
 Wire Wire Line
-	5450 6550 5450 6800
+	5450 6550 5450 6650
 Wire Wire Line
 	5450 6650 5500 6650
 Wire Wire Line
 	5450 6800 5950 6800
 Wire Wire Line
-	5950 6800 5950 6550
+	5950 6800 5950 6650
 Wire Wire Line
 	5950 6550 5900 6550
 Connection ~ 5450 6650
@@ -1644,4 +1610,180 @@ Wire Wire Line
 Connection ~ 5950 6650
 Text Label 5800 6800 0    39   ~ 0
 GND
+Wire Wire Line
+	3100 2450 3200 2450
+Wire Wire Line
+	3200 2450 3300 2450
+Wire Wire Line
+	3600 2450 4050 2450
+Wire Wire Line
+	3500 2450 3600 2450
+Wire Wire Line
+	3300 2450 3300 2500
+Wire Wire Line
+	3300 2450 3400 2450
+Wire Wire Line
+	3400 2450 3500 2450
+Wire Wire Line
+	2750 2450 3100 2450
+Wire Wire Line
+	3950 1200 3950 1400
+Wire Wire Line
+	3950 1100 4100 1100
+Wire Wire Line
+	2750 1900 2750 1950
+Wire Wire Line
+	2750 1200 2750 1300
+Wire Wire Line
+	2750 1300 2750 1400
+Wire Wire Line
+	2750 1100 2800 1100
+Wire Wire Line
+	1800 2450 2500 2450
+Wire Wire Line
+	1550 2450 1800 2450
+Wire Wire Line
+	1300 2450 1550 2450
+Wire Wire Line
+	1800 1700 1800 1850
+Wire Wire Line
+	1800 1700 2500 1700
+Wire Wire Line
+	1550 1700 1800 1700
+Wire Wire Line
+	1300 1700 1550 1700
+Wire Wire Line
+	5350 4150 5350 4200
+Wire Wire Line
+	5350 4150 5450 4150
+Wire Wire Line
+	4050 6650 4150 6650
+Wire Wire Line
+	4150 6650 4250 6650
+Wire Wire Line
+	4250 6650 4350 6650
+Wire Wire Line
+	4350 6650 4450 6650
+Wire Wire Line
+	4450 6650 4550 6650
+Wire Wire Line
+	4550 6650 4850 6650
+Wire Wire Line
+	5250 4150 5350 4150
+Wire Wire Line
+	5450 4150 6250 4150
+Wire Wire Line
+	6150 3650 6250 3650
+Wire Wire Line
+	6450 3050 6550 3050
+Wire Wire Line
+	6900 3650 6900 3800
+Wire Wire Line
+	6500 3650 6550 3650
+Wire Wire Line
+	4700 4150 5250 4150
+Wire Wire Line
+	4400 4150 4700 4150
+Wire Wire Line
+	4100 3500 4100 3750
+Wire Wire Line
+	4100 3500 4750 3500
+Wire Wire Line
+	10150 2000 10400 2000
+Wire Wire Line
+	10400 2000 10650 2000
+Wire Wire Line
+	10650 2000 10800 2000
+Wire Wire Line
+	10650 1400 10800 1400
+Wire Wire Line
+	10150 2750 10400 2750
+Wire Wire Line
+	10400 2750 10650 2750
+Wire Wire Line
+	10650 2750 10800 2750
+Wire Wire Line
+	10650 2150 10800 2150
+Wire Wire Line
+	5000 6050 5150 6050
+Wire Wire Line
+	5050 5750 5150 5750
+Wire Wire Line
+	5100 5600 5150 5600
+Wire Wire Line
+	9900 2150 10150 2150
+Wire Wire Line
+	9900 1400 10150 1400
+Wire Wire Line
+	8650 2000 8900 2000
+Wire Wire Line
+	8900 2000 9150 2000
+Wire Wire Line
+	9150 2000 9300 2000
+Wire Wire Line
+	9150 1400 9300 1400
+Wire Wire Line
+	8650 2750 8900 2750
+Wire Wire Line
+	8900 2750 9150 2750
+Wire Wire Line
+	9150 2750 9300 2750
+Wire Wire Line
+	9150 2150 9300 2150
+Wire Wire Line
+	8400 2150 8650 2150
+Wire Wire Line
+	8400 1400 8650 1400
+Wire Wire Line
+	2050 5000 2050 5800
+Wire Wire Line
+	2000 4900 2000 5700
+Wire Wire Line
+	2050 5800 2700 5800
+Wire Wire Line
+	2050 5800 2050 6600
+Wire Wire Line
+	2000 5700 2000 6500
+Wire Wire Line
+	6250 3650 6500 3650
+Wire Wire Line
+	6250 4150 6500 4150
+Wire Wire Line
+	2750 1400 2750 1900
+Wire Wire Line
+	4850 6650 4850 6750
+Wire Wire Line
+	4850 6650 5000 6650
+Wire Wire Line
+	4850 5450 5150 5450
+Wire Wire Line
+	4600 1700 4600 1950
+Wire Wire Line
+	4050 2450 4600 2450
+Wire Wire Line
+	2500 2450 2750 2450
+Wire Wire Line
+	2500 1700 2800 1700
+Wire Wire Line
+	2000 6500 2150 6500
+Wire Wire Line
+	4750 1150 4850 1150
+Wire Wire Line
+	2800 5800 2850 5800
+Wire Wire Line
+	2700 5800 2800 5800
+Wire Wire Line
+	6900 3500 6900 3650
+Wire Wire Line
+	6500 4150 6900 4150
+Wire Wire Line
+	7150 1850 7100 1850
+Wire Wire Line
+	7150 2050 7150 2150
+Wire Wire Line
+	7150 1950 7150 2050
+Wire Wire Line
+	5450 6650 5450 6800
+Wire Wire Line
+	5950 6650 5950 6550
 $EndSCHEMATC

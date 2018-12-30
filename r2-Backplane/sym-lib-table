@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name r2-Backplane-rescue)(type Legacy)(uri ${KIPRJMOD}/r2-Backplane-rescue.lib)(options "")(descr ""))
+  (lib (name IansParts)(type Legacy)(uri /home/ian/working-copies/Digitabulum-Hardware/IansParts.lib)(options "")(descr ""))
+)

@@ -32,11 +32,11 @@ Text Label 3450 4500 0    39   ~ 0
 ~LED_RESET
 Text Label 1500 3800 2    39   ~ 0
 CHIP_PU
-Text Label 1500 4500 2    39   ~ 0
+Text Label 1500 4800 2    39   ~ 0
 SPI1_MOSI
 Text Label 3450 4800 0    39   ~ 0
 CPLD_OE
-Text Label 1500 4800 2    39   ~ 0
+Text Label 1500 4500 2    39   ~ 0
 SPI1_MISO
 Text Label 3450 4400 0    39   ~ 0
 ~REQ
