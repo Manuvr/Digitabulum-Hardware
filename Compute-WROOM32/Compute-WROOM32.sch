@@ -1,120 +1,72 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ESP32-footprints-Shem-Lib
-LIBS:IansParts
+EESchema Schematic File Version 4
 LIBS:Compute-WROOM32-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr User 9449 7087
 encoding utf-8
 Sheet 1 1
 Title "WROOM32 Compute PCB"
-Date "2017-06-17"
-Rev "1"
+Date "2018-12-29"
+Rev "2"
 Comp "Manuvr, Inc"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1500 4600 2    39   ~ 0
-IRQ_WAKEUP
-Text Label 2950 5650 3    39   ~ 0
-CPLD_EXT_CLK
-Text Label 1500 4400 2    39   ~ 0
-SPI2_CS
-Text Label 3450 4450 0    39   ~ 0
-~LED_INT
-Text Label 1500 5000 2    39   ~ 0
-I2C_SDA
-Text Label 1500 4500 2    39   ~ 0
-SPI2_MOSI
 Text Label 1500 4300 2    39   ~ 0
+IRQ_WAKEUP
+Text Label 3450 4700 0    39   ~ 0
+CPLD_EXT_CLK
+Text Label 1500 4200 2    39   ~ 0
+SPI2_CS
+Text Label 3450 4300 0    39   ~ 0
+~LED_INT
+Text Label 1500 4600 2    39   ~ 0
+I2C_SDA
+Text Label 1500 4400 2    39   ~ 0
+SPI2_MOSI
+Text Label 1500 4100 2    39   ~ 0
 SPI2_CLK
-Text Label 3450 4350 0    39   ~ 0
+Text Label 3450 4500 0    39   ~ 0
 ~LED_RESET
-Text Label 1500 4000 2    39   ~ 0
+Text Label 1500 3800 2    39   ~ 0
 CHIP_PU
-Text Label 3450 4750 0    39   ~ 0
+Text Label 1500 4500 2    39   ~ 0
 SPI1_MOSI
-Text Label 1500 4700 2    39   ~ 0
+Text Label 3450 4800 0    39   ~ 0
 CPLD_OE
-Text Label 3450 4850 0    39   ~ 0
-SPI1_MISO
-Text Label 3450 4150 0    39   ~ 0
-~REQ
-Text Label 3450 4650 0    39   ~ 0
-SPI1_CLK
-Text Label 3450 4550 0    39   ~ 0
-SPI1_CS
-Text Label 1500 5200 2    39   ~ 0
-GND
-Text Label 3450 4050 0    39   ~ 0
-TxD
-Text Label 3450 3950 0    39   ~ 0
-RxD
-Text Label 3450 4950 0    39   ~ 0
-PIN_0
-Text Label 1500 5100 2    39   ~ 0
-I2C_SCL
 Text Label 1500 4800 2    39   ~ 0
+SPI1_MISO
+Text Label 3450 4400 0    39   ~ 0
+~REQ
+Text Label 2150 5450 3    39   ~ 0
+SPI1_CLK
+Text Label 3450 4600 0    39   ~ 0
+SPI1_CS
+Text Label 3450 4000 0    39   ~ 0
+TxD
+Text Label 3450 3900 0    39   ~ 0
+RxD
+Text Label 3450 4900 0    39   ~ 0
+PIN_0
+Text Label 1500 4700 2    39   ~ 0
+I2C_SCL
+Text Label 2950 5450 3    39   ~ 0
 ~CPLD_RESET
 Text Label 1500 4900 2    39   ~ 0
 ~SHUTDOWN
-Text Label 1500 3900 2    39   ~ 0
+Text Label 1500 3700 2    39   ~ 0
 VCC0
-Text Label 3450 3850 0    39   ~ 0
+Text Label 3450 3800 0    39   ~ 0
 FTDI_RESET
 Text Label 7650 3200 2    39   ~ 0
 PIN_0
-$Comp
-L ESP32-WROOM U1
-U 1 1 5904C125
-P 2500 4500
-F 0 "U1" H 1800 5750 60  0000 C CNN
-F 1 "ESP32-WROOM" H 3000 5750 60  0000 C CNN
-F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 2850 5850 60  0001 C CNN
-F 3 "" H 2050 4950 60  0001 C CNN
-F 4 "WROOM32" H 2500 4500 60  0001 C CNN "Manu_Number"
-F 5 "Espressif" H 2500 4500 60  0001 C CNN "Manu_Name"
-F 6 "1528-1801-ND" H 2500 4500 60  0001 C CNN "Digikey_Number"
-	1    2500 4500
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3400 4250
-Text Label 2050 5600 3    39   ~ 0
+Text Label 2050 5400 3    39   ~ 0
 GND
-Text Label 3450 5150 0    39   ~ 0
+Text Label 3450 3600 0    39   ~ 0
 GND
-Text Label 3450 5050 0    39   ~ 0
+Text Label 1450 3500 2    39   ~ 0
 GND
 Text Label 7650 3500 2    39   ~ 0
 VCC0
@@ -162,28 +114,10 @@ Text Label 7650 3300 2    39   ~ 0
 ~SHUTDOWN
 Text Label 7650 4200 2    39   ~ 0
 I2C_SCL
-$Comp
-L CAPARRAY_4 CARY2
-U 1 1 590EDA84
-P 5100 4400
-F 0 "CARY2" H 5100 3800 60  0000 C CNN
-F 1 "100nF" H 5100 4950 39  0000 C CNN
-F 2 "r2Parts:CapArray_CKCL44" H 5100 4400 60  0001 C CNN
-F 3 "" H 5100 4400 60  0000 C CNN
-F 4 "CKCL44X5R0J104M085AA" H 5100 4400 60  0001 C CNN "Manu_Number"
-F 5 "TDK Corporation" H 5100 4400 60  0001 C CNN "Manu_Name"
-F 6 "445-1838-1-ND" H 5100 4400 60  0001 C CNN "Digikey_Number"
-	1    5100 4400
-	0    -1   1    0   
-$EndComp
-Text Label 5650 4700 0    39   ~ 0
-GND
-Text Label 5650 4100 0    39   ~ 0
-VCC0
 Text Label 6650 4400 1    39   ~ 0
 GND
 $Comp
-L GND #PWR01
+L Compute-WROOM32-rescue:GND #PWR01
 U 1 1 590EDA85
 P 6650 4550
 F 0 "#PWR01" H 6650 4300 50  0001 C CNN
@@ -194,7 +128,7 @@ F 3 "" H 6650 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CAPARRAY_4 CARY1
+L IansParts:CAPARRAY_4 CARY1
 U 1 1 590EF85F
 P 5100 3650
 F 0 "CARY1" H 5100 3050 60  0000 C CNN
@@ -216,7 +150,7 @@ TxD
 Text Label 6850 2200 0    39   ~ 0
 RxD
 $Comp
-L QA_NPN QA_NPN1
+L IansParts:QA_NPN QA_NPN1
 U 1 1 590F081F
 P 8100 1700
 F 0 "QA_NPN1" H 8100 1950 39  0000 C CNN
@@ -234,7 +168,7 @@ PIN_0
 Text Label 7700 1550 2    39   ~ 0
 CHIP_PU
 $Comp
-L C C6
+L Compute-WROOM32-rescue:C C6
 U 1 1 590F0820
 P 5350 1150
 F 0 "C6" H 5375 1250 50  0000 L CNN
@@ -248,7 +182,7 @@ F 6 "1276-1506-1-ND" H 5350 1150 60  0001 C CNN "Digikey_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Compute-WROOM32-rescue:C C3
 U 1 1 590F0821
 P 4750 1150
 F 0 "C3" H 4775 1250 50  0000 L CNN
@@ -264,7 +198,7 @@ $EndComp
 Text Label 6850 2400 0    39   ~ 0
 FTDI_RESET
 $Comp
-L C C5
+L Compute-WROOM32-rescue:C C5
 U 1 1 590F0823
 P 5000 1150
 F 0 "C5" H 5025 1250 50  0000 L CNN
@@ -280,7 +214,7 @@ $EndComp
 Text Label 4450 900  2    39   ~ 0
 VCCUSB
 $Comp
-L C C1
+L Compute-WROOM32-rescue:C C1
 U 1 1 590F0826
 P 4500 1150
 F 0 "C1" H 4525 1250 50  0000 L CNN
@@ -304,12 +238,12 @@ Text Label 4400 2250 2    39   ~ 0
 USB_D+
 Text Label 5650 2850 0    39   ~ 0
 GND
-Text Label 2150 5650 3    39   ~ 0
+Text Label 3450 4100 0    39   ~ 0
 ALERT
-Text Label 3450 3750 0    39   ~ 0
+Text Label 3450 3700 0    39   ~ 0
 ISEL
 $Comp
-L CAPARRAY_4 CARY3
+L IansParts:CAPARRAY_4 CARY3
 U 1 1 590F4E13
 P 2650 1850
 F 0 "CARY3" H 2650 1250 60  0000 C CNN
@@ -323,7 +257,7 @@ F 6 "445-1838-1-ND" H 2650 1850 60  0001 C CNN "Digikey_Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_PACK4 RP1
+L Compute-WROOM32-rescue:R_PACK4 RP1
 U 1 1 590F50A7
 P 2350 1200
 F 0 "RP1" H 2350 1650 50  0000 C CNN
@@ -349,7 +283,7 @@ VCC0
 Text Label 4450 1350 2    39   ~ 0
 GND
 $Comp
-L CONN_01X01 P4
+L Compute-WROOM32-rescue:CONN_01X01 P4
 U 1 1 590EDA5D
 P 8000 950
 F 0 "P4" H 8000 1050 50  0000 C CNN
@@ -369,7 +303,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 950  6150 1050
 Wire Wire Line
-	5350 950  6200 950 
+	5350 950  5900 950 
 Wire Wire Line
 	6000 900  6000 1050
 Connection ~ 4500 1350
@@ -379,18 +313,18 @@ Wire Wire Line
 Wire Wire Line
 	2400 2000 2350 2000
 Wire Wire Line
-	2000 950  2400 950 
+	2000 950  2100 950 
 Connection ~ 2300 950 
 Wire Wire Line
 	2300 1000 2300 950 
 Wire Wire Line
 	2200 950  2200 1000
 Wire Wire Line
-	2300 2250 2400 2250
+	2300 2250 2350 2250
 Wire Wire Line
-	1900 1750 2400 1750
+	1900 1750 2200 1750
 Wire Wire Line
-	1900 1500 2400 1500
+	1900 1500 2300 1500
 Connection ~ 2950 2250
 Wire Wire Line
 	2950 2250 2900 2250
@@ -403,11 +337,11 @@ Wire Wire Line
 Wire Wire Line
 	2950 1500 2900 1500
 Wire Wire Line
-	2950 1500 2950 2350
+	2950 1500 2950 1750
 Wire Wire Line
-	1500 4000 1550 4000
+	1500 3700 1550 3700
 Wire Wire Line
-	2150 5650 2150 5550
+	2150 5450 2150 5350
 Wire Wire Line
 	6000 2850 6000 2750
 Connection ~ 4500 900 
@@ -427,7 +361,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 1650 5550 1650
 Wire Wire Line
-	4750 2850 6100 2850
+	4750 2850 5000 2850
 Connection ~ 5500 2150
 Connection ~ 5900 2850
 Connection ~ 4750 900 
@@ -436,13 +370,13 @@ Connection ~ 5000 900
 Wire Wire Line
 	5000 900  5000 1000
 Wire Wire Line
-	4450 900  6000 900 
+	4450 900  4500 900 
 Wire Wire Line
 	4750 900  4750 1000
 Wire Wire Line
 	5000 1350 5000 1300
 Wire Wire Line
-	4450 1350 5350 1350
+	4450 1350 4500 1350
 Connection ~ 7350 1850
 Wire Wire Line
 	7350 2000 8550 2000
@@ -468,7 +402,7 @@ Connection ~ 7300 1700
 Wire Wire Line
 	8450 1850 8500 1850
 Wire Wire Line
-	6800 1700 7750 1700
+	6800 1700 7300 1700
 Wire Wire Line
 	7300 1950 7300 1700
 Wire Wire Line
@@ -485,12 +419,12 @@ Wire Wire Line
 Wire Wire Line
 	5900 2850 5900 2750
 Wire Wire Line
-	4400 2250 5600 2250
+	4400 2250 4750 2250
 Wire Wire Line
-	4400 2150 5600 2150
+	4400 2150 5250 2150
 Connection ~ 5250 3350
 Wire Wire Line
-	4750 3350 6050 3350
+	4750 3350 5000 3350
 Connection ~ 5000 3350
 Wire Wire Line
 	5000 3350 5000 3400
@@ -513,8 +447,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 3950 4750 3900
 Wire Wire Line
-	4750 3950 6050 3950
-Connection ~ 5250 4100
+	4750 3950 5000 3950
 Wire Wire Line
 	8200 4400 8250 4400
 Wire Wire Line
@@ -522,96 +455,55 @@ Wire Wire Line
 Wire Wire Line
 	6650 4400 6650 4550
 Wire Wire Line
-	4750 4100 5650 4100
-Connection ~ 5000 4100
-Wire Wire Line
-	5000 4100 5000 4150
-Wire Wire Line
-	5250 4100 5250 4150
-Connection ~ 5500 4100
-Wire Wire Line
-	5500 4100 5500 4150
-Wire Wire Line
-	4750 4150 4750 4100
-Connection ~ 5500 4700
-Wire Wire Line
-	5500 4700 5500 4650
-Connection ~ 5250 4700
-Wire Wire Line
-	5250 4700 5250 4650
-Connection ~ 5000 4700
-Wire Wire Line
-	5000 4650 5000 4700
-Wire Wire Line
-	4750 4700 4750 4650
-Wire Wire Line
-	4750 4700 5650 4700
-Wire Wire Line
 	8250 4300 8200 4300
 Wire Wire Line
-	2950 5550 2950 5650
+	2950 5350 2950 5450
 Wire Wire Line
-	2850 5650 2850 5550
+	3400 4000 3450 4000
 Wire Wire Line
-	1500 4300 1550 4300
+	3450 4100 3400 4100
 Wire Wire Line
-	3400 4050 3450 4050
+	3450 3600 3400 3600
 Wire Wire Line
-	3450 4150 3400 4150
-Wire Wire Line
-	3450 5050 3400 5050
-Wire Wire Line
-	3450 5150 3400 5150
-Wire Wire Line
-	2050 5600 2050 5550
-Wire Wire Line
-	1500 5200 1550 5200
-Wire Wire Line
-	1500 4700 1550 4700
-Wire Wire Line
-	3400 3850 3450 3850
-Wire Wire Line
-	3400 4650 3450 4650
-Wire Wire Line
-	3400 3750 3450 3750
-Wire Wire Line
-	3400 4950 3450 4950
-Wire Wire Line
-	1500 5000 1550 5000
-Wire Wire Line
-	3450 4450 3400 4450
-Wire Wire Line
-	3400 4850 3450 4850
-Wire Wire Line
-	3400 4750 3450 4750
-Wire Wire Line
-	3450 4550 3400 4550
-Wire Wire Line
-	3450 3950 3400 3950
-Wire Wire Line
-	1550 4600 1500 4600
-Wire Wire Line
-	1500 4800 1550 4800
-Wire Wire Line
-	1550 3900 1500 3900
-Wire Wire Line
-	1500 5100 1550 5100
+	2050 5400 2050 5350
 Wire Wire Line
 	1500 4900 1550 4900
 Wire Wire Line
-	1500 4500 1550 4500
-Wire Wire Line
 	1500 4400 1550 4400
+Wire Wire Line
+	3400 3800 3450 3800
+Wire Wire Line
+	3400 4600 3450 4600
+Wire Wire Line
+	3400 3700 3450 3700
+Wire Wire Line
+	3400 4900 3450 4900
+Wire Wire Line
+	3450 4400 3400 4400
+Wire Wire Line
+	3400 4800 3450 4800
+Wire Wire Line
+	3400 4700 3450 4700
+Wire Wire Line
+	3450 4500 3400 4500
+Wire Wire Line
+	3450 3900 3400 3900
+Wire Wire Line
+	1550 4300 1500 4300
+Wire Wire Line
+	1500 4200 1550 4200
+Wire Wire Line
+	1500 4100 1550 4100
 Text Label 6200 950  0    39   ~ 0
 FTDI_RESET
 Connection ~ 6150 950 
 Wire Wire Line
-	7350 1500 7350 2000
+	7350 1500 7350 1850
 NoConn ~ 5550 1950
 NoConn ~ 6800 1600
 NoConn ~ 6800 1400
 $Comp
-L CAPARRAY_4 CARY4
+L IansParts:CAPARRAY_4 CARY4
 U 1 1 5914AE0C
 P 5100 2550
 F 0 "CARY4" H 5100 1950 60  0000 C CNN
@@ -625,7 +517,7 @@ F 6 "445-1824-1-ND" H 5100 2550 60  0001 C CNN "Digikey_Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L FT231XS U2
+L IansParts:FT231XS U2
 U 1 1 590F0828
 P 6150 1800
 F 0 "U2" V 6200 1450 60  0000 C CNN
@@ -661,7 +553,7 @@ Wire Wire Line
 	4750 2300 4750 2250
 Connection ~ 4750 2250
 $Comp
-L HiRose-02X15 P1
+L IansParts:HiRose-02X15 P1
 U 1 1 59192722
 P 7950 3800
 F 0 "P1" H 7950 4600 50  0000 C CNN
@@ -711,7 +603,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 4750 7900 4800
 Wire Wire Line
-	7900 4800 8050 4800
+	7900 4800 8000 4800
 Wire Wire Line
 	8000 4800 8000 4750
 Connection ~ 8000 4800
@@ -760,9 +652,9 @@ Wire Wire Line
 	2100 1000 2100 950 
 Connection ~ 2100 950 
 Wire Wire Line
-	3400 4350 3450 4350
+	3400 4300 3450 4300
 $Comp
-L IANS_CAP_POLARIZED C2
+L IansParts:IANS_CAP_POLARIZED C2
 U 1 1 59197092
 P 6050 3700
 F 0 "C2" V 5950 3600 39  0000 C CNN
@@ -783,12 +675,113 @@ Text Label 7650 3100 2    39   ~ 0
 CHIP_PU
 NoConn ~ 2100 1400
 NoConn ~ 2000 1400
-NoConn ~ 1550 4200
-NoConn ~ 1550 4100
-NoConn ~ 2250 5550
-NoConn ~ 2350 5550
-NoConn ~ 2450 5550
-NoConn ~ 2550 5550
-NoConn ~ 2650 5550
-NoConn ~ 2750 5550
+NoConn ~ 2250 5350
+NoConn ~ 2350 5350
+NoConn ~ 2450 5350
+NoConn ~ 2550 5350
+NoConn ~ 2650 5350
+NoConn ~ 2750 5350
+Wire Wire Line
+	5900 950  6150 950 
+Wire Wire Line
+	4500 1350 4750 1350
+Wire Wire Line
+	2350 2250 2400 2250
+Wire Wire Line
+	2300 950  2400 950 
+Wire Wire Line
+	2950 2250 2950 2350
+Wire Wire Line
+	2950 2000 2950 2250
+Wire Wire Line
+	2950 1750 2950 2000
+Wire Wire Line
+	4500 900  4750 900 
+Wire Wire Line
+	4750 1350 5000 1350
+Wire Wire Line
+	5500 2150 5600 2150
+Wire Wire Line
+	5900 2850 6000 2850
+Wire Wire Line
+	4750 900  5000 900 
+Wire Wire Line
+	5000 1350 5350 1350
+Wire Wire Line
+	5000 900  6000 900 
+Wire Wire Line
+	7350 1850 7350 2000
+Wire Wire Line
+	7300 1700 7750 1700
+Wire Wire Line
+	6000 2850 6100 2850
+Wire Wire Line
+	5250 3350 5500 3350
+Wire Wire Line
+	5000 3350 5250 3350
+Wire Wire Line
+	5500 3350 6050 3350
+Wire Wire Line
+	5500 3950 6050 3950
+Wire Wire Line
+	5250 3950 5500 3950
+Wire Wire Line
+	5000 3950 5250 3950
+Wire Wire Line
+	6150 950  6200 950 
+Wire Wire Line
+	5000 2850 5250 2850
+Wire Wire Line
+	5250 2850 5500 2850
+Wire Wire Line
+	5500 2850 5900 2850
+Wire Wire Line
+	5250 2150 5500 2150
+Wire Wire Line
+	5000 2250 5600 2250
+Wire Wire Line
+	4750 2250 5000 2250
+Wire Wire Line
+	8000 4800 8050 4800
+Wire Wire Line
+	2300 1500 2400 1500
+Wire Wire Line
+	2200 1750 2400 1750
+Wire Wire Line
+	2200 950  2300 950 
+Wire Wire Line
+	2100 950  2200 950 
+Wire Wire Line
+	1500 4700 1550 4700
+Wire Wire Line
+	1550 4800 1500 4800
+Wire Wire Line
+	1500 4500 1550 4500
+Wire Wire Line
+	1550 4600 1500 4600
+$Comp
+L ESP32-footprints-Shem-Lib:ESP32-WROOM_U U1
+U 1 1 5C2C46D7
+P 2500 4300
+F 0 "U1" V 2550 3900 60  0000 C CNN
+F 1 "ESP32-WROOM_U" V 2450 4200 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32-WROOM-U" H 3350 5350 60  0001 C CNN
+F 3 "" H 2050 4750 60  0001 C CNN
+F 4 "ESP32-WROOM-32U" V 2500 4300 50  0001 C CNN "Manu_Number"
+F 5 "Espressif" V 2500 4300 50  0001 C CNN "Manu_Name"
+F 6 "1904-1028-1-ND" V 2500 4300 50  0001 C CNN "Digikey_Number"
+	1    2500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3500 1550 3600
+Wire Wire Line
+	1550 3500 1450 3500
+Connection ~ 1550 3500
+NoConn ~ 3400 4200
+NoConn ~ 1550 4000
+NoConn ~ 1550 3900
+Wire Wire Line
+	1500 3800 1550 3800
+NoConn ~ 2850 5350
 $EndSCHEMATC
