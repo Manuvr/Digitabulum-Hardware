@@ -16,7 +16,7 @@ Comment4 ""
 $EndDescr
 Text Label 1500 4300 2    39   ~ 0
 IRQ_WAKEUP
-Text Label 3450 4700 0    39   ~ 0
+Text Label 4900 4300 0    39   ~ 0
 CPLD_EXT_CLK
 Text Label 1500 4200 2    39   ~ 0
 SPI2_CS
@@ -483,8 +483,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 4800 3450 4800
 Wire Wire Line
-	3400 4700 3450 4700
-Wire Wire Line
 	3450 4500 3400 4500
 Wire Wire Line
 	3450 3900 3400 3900
@@ -784,4 +782,78 @@ NoConn ~ 1550 3900
 Wire Wire Line
 	1500 3800 1550 3800
 NoConn ~ 2850 5350
+$Comp
+L Compute-WROOM32-rescue:R_PACK4 RP2
+U 1 1 5C52DC57
+P 5600 4900
+F 0 "RP2" H 5600 5350 50  0000 C CNN
+F 1 "15k" H 5600 4850 50  0000 C CNN
+F 2 "r2Parts:RES_4_EXBN8V" H 5500 4750 50  0000 C CNN
+F 3 "" H 5600 4900 50  0000 C CNN
+F 4 "EXB-38V102JV" H 5600 4900 60  0001 C CNN "Manu_Number"
+F 5 "Panasonic Electronic Components" H 5600 4900 60  0001 C CNN "Manu_Name"
+F 6 "Y9102CT-ND" H 5600 4900 60  0001 C CNN "Digikey_Number"
+	1    5600 4900
+	-1   0    0    -1  
+$EndComp
+Text Label 5350 4750 2    39   ~ 0
+I2C_SDA
+Text Label 5350 4850 2    39   ~ 0
+I2C_SCL
+Wire Wire Line
+	5350 4850 5400 4850
+Wire Wire Line
+	5400 4750 5350 4750
+Wire Wire Line
+	5800 4850 5850 4850
+Wire Wire Line
+	5850 4850 5850 4750
+Wire Wire Line
+	5850 4550 5800 4550
+Wire Wire Line
+	5800 4650 5850 4650
+Connection ~ 5850 4650
+Wire Wire Line
+	5850 4650 5850 4550
+Wire Wire Line
+	5800 4750 5850 4750
+Connection ~ 5850 4750
+Wire Wire Line
+	5850 4750 5850 4650
+Text Label 5950 4650 0    39   ~ 0
+VCC0
+Wire Wire Line
+	5950 4650 5850 4650
+NoConn ~ 5400 4650
+NoConn ~ 5400 4550
+$Comp
+L IansParts:ASTMLP U3
+U 1 1 5C599D6C
+P 4450 4400
+F 0 "U3" H 4500 4725 50  0000 C CNN
+F 1 "ASTMLP" H 4500 4634 50  0000 C CNN
+F 2 "r2Parts:ASTMLPD" H 4450 4400 50  0001 C CNN
+F 3 "" H 4450 4400 50  0001 C CNN
+F 4 "ASTMLPD-16.000MHZ-LJ-E-T‎" H 4450 4400 50  0001 C CNN "Manu_Number"
+F 5 "Abracon" H 4450 4400 50  0001 C CNN "Manu_Name"
+F 6 "‎535-13087-1-ND‎" H 4450 4400 50  0001 C CNN "Digikey_Number"
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+Text Label 4100 4450 2    39   ~ 0
+GND
+Wire Wire Line
+	4100 4450 4150 4450
+Wire Wire Line
+	4850 4300 4900 4300
+Text Label 4900 4450 0    39   ~ 0
+VCC0
+Wire Wire Line
+	4900 4450 4850 4450
+Wire Wire Line
+	3850 4700 3850 4300
+Wire Wire Line
+	3850 4300 4150 4300
+Wire Wire Line
+	3400 4700 3850 4700
 $EndSCHEMATC
